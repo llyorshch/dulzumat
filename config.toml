@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://5ead3df150cfcd2b443452f6--clever-pare-22cc01.netlify.app/"
+baseURL = "http://dulzumat.ge.org.es/"
 languageCode = "en-us"
 title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo"
