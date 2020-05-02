@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://dulzumat.ge.org.es/"
+baseURL = "https://dulzumat.ge.org.es/"
 languageCode = "en-us"
 title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo"
