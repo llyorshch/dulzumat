@@ -5,6 +5,7 @@
         <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" class="img-fluid"
             alt="{{ .Site.Title }}"></a>
       </div>
+      {{ if .Site.Data.footer.importantLinks.enable }}
       <div class="col-md-3 col-sm-6">
         <h5 class="font-weight-medium mb-4">Important Links</h5>
         <ul class="list-unstyled">
@@ -13,6 +14,7 @@
           {{ end }}
         </ul>
       </div>
+      {{ end }}
       <div class="col-md-4 col-sm-6">
         <h5 class="font-weight-medium mb-4">Connect With Us</h5>
         <ul class="list-unstyled mb-5">

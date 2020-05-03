@@ -1,3 +1,4 @@
+{{ if .Site.Data.homepage.cta.enable }}
 <!-- call to  action -->
 {{ with .Site.Data.homepage.cta }}
 <section class="py-4 bg-gradient position-relative">
@@ -19,3 +20,4 @@
 </section>
 {{ end }}
 <!-- /call to action -->
+{{ end }}
