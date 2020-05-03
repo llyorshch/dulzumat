@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://dulzumat.ge.org.es/"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Hargo | Hugo Ecommerce Site"
 theme = "hargo"
