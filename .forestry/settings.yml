@@ -18,5 +18,5 @@ build:
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
-    -d public
+    -d public --config=config/_default/config.toml
 version: 0.69.2
