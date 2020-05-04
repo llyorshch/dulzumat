@@ -1,0 +1,15 @@
+# Dulzumat Site
+
+Website para la web de Dulzumat.
+
+Website construido con [Hugo](https://gohugo.io/), publicado en [Netlify](https://www.netlify.com/). 
+
+## Trabajo en local
+
+Para trabajar en local, [instalar Hugo](https://gohugo.io/getting-started/installing/) y ejecutar `hugo server` en la raíz del proyecto para obtener un servidor local en <http://localhost:1313>. Los cambios en los ficheros del proyecto se reflejarán automáticamente en el servidor local.
+
+## Publicación automática
+
+La [configuración de Netlify](https://app.netlify.com/sites/clever-pare-22cc01/overview) está conectada al repositorio. Cada push al repositorio provocará que el site se reconstruya y se republique. Este proceso puede llegar a tardar algunos minutos dependiendo de la carga en Netlify.
+
+Por el momento, la web se pulica en <https://dulzumat.ge.org.es>. Más adelante, este entorno quedará como "staging" y la web se publicará en <https://www.dulzumat.es>.
