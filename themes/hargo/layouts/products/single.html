@@ -5,6 +5,7 @@
 <section class="section pt-0">
   <div class="container">
     <div class="row">
+      {{ if isset .Params "images" }}
       <div class="col-lg-5 mb-4 mb-lg-0">
         <!-- product image slider -->
         <div class="product-slider">
@@ -15,6 +16,7 @@
           {{ end }}
         </div>
       </div>
+      {{ end }}
       <div class="col-lg-5 offset-lg-1">
         <h4 class="font-weight-medium">{{ .Title }}</h4>
         <!-- rating star -->
