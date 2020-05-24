@@ -13,3 +13,7 @@ Para trabajar en local, [instalar Hugo](https://gohugo.io/getting-started/instal
 La [configuración de Netlify](https://app.netlify.com/sites/clever-pare-22cc01/overview) está conectada al repositorio. Cada push al repositorio provocará que el site se reconstruya y se republique. Este proceso puede llegar a tardar algunos minutos dependiendo de la carga en Netlify.
 
 Por el momento, la web se pulica en <https://dulzumat.ge.org.es>. Más adelante, este entorno quedará como "staging" y la web se publicará en <https://www.dulzumat.es>.
+
+## Edición de contenidos
+
+La edición de contenidos se realiza con [Netlify CMS](https://www.netlifycms.org/) en la [URL de administración](https://dulzumat.ge.org.es/admin). La autenticación se configura en [el servicio "Identity" de Netlify](https://app.netlify.com/sites/clever-pare-22cc01/identity).
