@@ -10,7 +10,7 @@
         <div class="card border-0 text-center">
           {{ if isset .Params "images" }}
           <a href="{{ .Permalink }}">
-            {{ range first 1 .Params.Images }}
+            {{ range first 1 .Params.images }}
             <img src="{{ .image | absURL }}" alt="{{ .Title }}" class="card-img-top">
             {{ end }}
           </a>
