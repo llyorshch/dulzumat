@@ -5,5 +5,6 @@ shortDescription: This is the **short** description
 description: And this is the long description
 price: 1 €
 images: /images/awesome.png
+image: /images/awesome.png
 ---
 And this is the **body** as rich text
