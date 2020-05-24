@@ -8,11 +8,11 @@
       {{ range .Data.Pages }}
       <div class="col-lg-4 col-sm-6 mb-4">
         <div class="card border-0 text-center">
-          {{ if isset .Params "images" }}
+          {{ if isset .Params "image" }}
           <a href="{{ .Permalink }}">
-            {{ range first 1 .Params.images }}
-            <img src="{{ .image | absURL }}" alt="{{ .Title }}" class="card-img-top">
-            {{ end }}
+            {{/*  {{ range first 1 .Params.images }}  */}}
+            <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="card-img-top">
+            {{/*  {{ end }}  */}}
           </a>
           {{ end }}
           <div class="card-body">

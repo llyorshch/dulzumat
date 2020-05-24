@@ -31,13 +31,13 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Price', name: 'price', widget: 'string' }
       - {
-          label: 'Images',
-          name: 'images',
+          label: 'Image',
+          name: 'image',
           widget: 'image',
           default: 'static/images/products/product-1.png',
           media_library: {
             config: {
-              multiple: true
+              multiple: false
             }
           }
       }
