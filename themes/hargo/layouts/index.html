@@ -63,10 +63,6 @@
 {{ end }}
 <!-- /about -->
 
-{{ if .Site.Data.homepage.cta.enable }}
-{{ partial "cta.html" . }}
-{{ end }}
-
 <!-- material -->
 {{ if .Site.Data.homepage.material.enable }}
 {{ with .Site.Data.homepage.material }}
@@ -156,24 +152,24 @@
 {{ end }}
 <!-- /promo video -->
 
-<!-- products -->
-{{ if .Site.Data.homepage.products.enable }}
+<!-- productos -->
+{{ if .Site.Data.homepage.productos.enable }}
 <section class="section pb-0">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center mb-4">
-        {{ with .Site.Data.homepage.products }}
+        {{ with .Site.Data.homepage.productos }}
         <h2>{{ .title | markdownify }}</h2>
         {{ end }}
       </div>
-      {{ range first 6 (where .Site.RegularPages "Type" "products") }}
+      {{ range where .Site.Pages "Type" "especialidad" }}
       <div class="col-lg-4 col-sm-6 mb-4">
         <div class="card border-0 text-center">
-          {{ if isset .Params "image" }}
+          {{ if and (isset .Params "images") (isset .Params.images 0)  }}
           <a href="{{ .Permalink }}">
-            {{/*  {{ range .Params.images }}  */}}
-            <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="card-img-top">
-            {{/*  {{ end }}  */}}
+            {{ range first 1 .Params.images }}
+            <img src="{{ .image | absURL }}" alt="{{ .Title }}" class="card-img-top">
+            {{ end }}
           </a>
           {{ end }}
           <div class="card-body">
@@ -198,7 +194,7 @@
   </div>
 </section>
 {{ end }}
-<!-- /products -->
+<!-- /productos -->
 
 <!-- testimonial -->
 {{ if .Site.Data.homepage.testimonial.enable }}
@@ -237,8 +233,10 @@
 {{ end }}
 <!-- /testimonial -->
 
+<!-- cta -->
 {{ if .Site.Data.homepage.cta.enable }}
 {{ partial "cta.html" . }}
 {{ end }}
+<!-- /cta -->
 
 {{ end }}

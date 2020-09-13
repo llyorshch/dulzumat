@@ -1,15 +1,14 @@
 ############################ banner ##########################
 banner:
   enable : true
-  title : "This is the banner text"
-  content : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed dia"
-  image : "images/banner.png"
+  title : "Pastelería artesana"
+  content : "Todo recién hecho en nuestro obrador, de forma totalmente artesanal. Abierto desde 1974."
+  image : "https://fakeimg.pl/726x482/ffffff/?text=Banner"
   # button
   button:
     enable : true
-    label : "All Products"
-    link : "products"
+    label : "Ver todos los productos"
+    link : "productos"
   # demo video
   video:
     enable : false
@@ -27,19 +26,19 @@ about:
 
 ###################### Call to action ########################
 cta:
-  enable : false
-  title : "Buy one Get One Free Taba Cream"
-  content : "Available for limited time only. Grab one while you still can!"
-  image : "images/cta.png"
-  overlayImage : "images/cta-overlay.png"
+  enable : true
+  title : "Encargos"
+  content : "Puedes hacer tus pedidos por via telefónica y recoger tu encargo en una de nuestras tiendas, o te lo llevamos donde nos indiques (Valencia capital)."
+  image : "https://fakeimg.pl/180x250/ddd,127/000/?text=CTA"
+  overlayImage : "https://fakeimg.pl/1500x200/ddd,127/000/?text=CTA-overlay"
   button:
-    label : "All Products"
-    link : "products"
+    label : "Ir a la página de encargos"
+    link : "/encargos"
 
 ######################## raw material #######################
 material:
   enable : false
-  title : "Ingredients Of Our Products"
+  title : "Ingredientes de nuestros productos"
   subtitle : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
           dol."
   materialItem:
@@ -82,18 +81,17 @@ advantage:
 ######################## Promo Video ##########################
 video:
   enable : true
-  title : "How To Use This Product?"
-  content : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et."
-  videoThumb : "images/video-thumb.jpg"
+  title : "Unas recetas que no se pueden dejar pasar"
+  content : "Todo recién hecho en nuestro obrador, de forma totalmente artesanal, con la tradición que respalda nuestro trabajo."
+  videoThumb : "https://fakeimg.pl/495x350/ddd,127/000/?&text=Video+preview"
   videoURL : "https://www.youtube.com/embed/wf4F2-9UXUo"
 
 
-######################## Products #############################
-products:
+######################## Productos #############################
+productos:
   enable : true
-  title : "Products List"
-  # product item comes from "content/products"
+  title : "Nuestras especialidades"
+  # product item comes from "content/productos"
 
 
 ########################## Testimonial ########################

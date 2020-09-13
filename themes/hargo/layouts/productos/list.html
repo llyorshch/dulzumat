@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      {{ range .Data.Pages }}
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card border-0 text-center">
+          {{ if and (isset .Params "images") (isset .Params.images 0)  }}
+          <a href="{{ .Permalink }}">
+            {{ range first 1 .Params.images }}
+            <img src="{{ .image | absURL }}" alt="{{ .Title }}" class="card-img-top">
+            {{ end }}
+          </a>
+          {{ end }}
+          <div class="card-body">
+            <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
+            {{ if isset .Params "description"}}
+            <p>{{ .Params.description }}</p>
+            {{ end }}
+            {{ if isset .Params "price" }}
+            <div class="mb-4">
+              <span class="lead text-primary">{{ .Params.Price }}</span>
+            </div>
+            {{ end }}
+            {{ if .Site.Data.homepage.snipcart.enable }}
+            <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="{{ .Params.ProductID }}"
+              data-item-name="{{ .Title }}" {{ range first 1 .Params.Images }} data-item-image="{{ .image | absURL }}"
+              {{ end }} data-item-price="{{ .Params.Price }}" data-item-url="{{ .Permalink }}">
+              Add to cart
+            </button>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ partial "cta.html" . }}
+
+{{ end }}

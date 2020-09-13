@@ -16,9 +16,9 @@ collections:
   #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
   #     - { label: 'Description', name: 'description', widget: 'string' }
   #     - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'products'
-    label: 'Products'
-    folder: 'content/products'
+  - name: 'productos'
+    label: 'Productos'
+    folder: 'content/productos'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:

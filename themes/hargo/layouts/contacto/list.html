@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ if .Site.Data.contact.contact.enable }}
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-6">
+        {{ with .Site.Data.contact.contact.office }}
+        <h3 class="mb-4">{{ .title | markdownify }}</h3>
+        {{ range .pastelerias}}
+        <div class="mb-2">
+            <ul class="list-unstyled">
+            {{ range .pasteleria}}
+                <li class="mb-1">{{ .contentLine | markdownify }} </li>
+            {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-lg-3 offset-lg-1 col-sm-6">
+        {{ with .Site.Data.contact.contact.opennigHour }}
+        <h3 class="mb-2">{{ .title | markdownify }}</h3>
+        <ul class="list-unstyled">
+          {{ range .dayTimeList }}
+          <li class="mb-1">{{ .dayTime | markdownify }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Site.Data.contact.map.enable }}
+<section class="section pt-0">
+  <div class="container mb-4">
+  <h3 class="mb-2">Ubicaciones</h3>
+  </div>
+  {{ range .Site.Data.contact.map.pastelerias}}
+  <div class="container mb-3">
+    <iframe src="{{ .mapRef }}" width="900" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+  {{ end }}
+</section>
+{{ end }}
+
+
+{{ end }}

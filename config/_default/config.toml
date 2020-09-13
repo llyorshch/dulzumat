@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "http://localhost:1313/"
 languageCode = "en-us"
-title = "Hargo | Hugo Ecommerce Site"
+title = "Dulzumat"
 theme = "hargo"
 summaryLength = "20"
 paginate = 10
@@ -33,56 +33,41 @@ disqusShortname = ""
 [menu]
     
   [[menu.main]]
-  name = "Products"
-  URL = "products"
+  name = "Productos"
+  URL = "productos"
   weight = 1
   
-  # [[menu.main]]
-  # name = "Blog"
-  # URL = "blog"
-  # weight = 2
-  
-  # [[menu.main]]
-  # name = "FAQ"
-  # URL = "faq"
-  # weight = 3
+  [[menu.main]]
+  name = "Encargos"
+  URL = "encargos"
+  weight = 2
   
   [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight = 4
+  name = "Contacto"
+  URL = "contacto"
+  weight = 3
 
   ############# footer menu #############
   [[menu.footer]]
-  name = "Products"
-  URL = "products"
+  name = "Productos"
+  URL = "productos"
   weight = 1
   
-  # [[menu.footer]]
-  # name = "Blog"
-  # URL = "blog"
-  # weight = 2
-  
-  # [[menu.footer]]
-  # name = "FAQ"
-  # URL = "faq"
-  # weight = 3
-  
-  # [[menu.footer]]
-  # name = "Terms & Conditions"
-  # URL = "terms-conditions"
-  # weight = 4
+  [[menu.footer]]
+  name = "Encargos"
+  URL = "encargos"
+  weight = 2
   
   [[menu.footer]]
-  name = "Contact"
-  URL = "contact"
-  weight = 5
+  name = "Contacto"
+  URL = "contacto"
+  weight = 3
 
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.png"
-home = "Home"
+logo = "https://fakeimg.pl/143x34/fff,0/000,255/?text=Logo&font_size=32"
+home = "Inicio"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"
@@ -94,11 +79,17 @@ mapMarker = "images/marker.png"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 # Contact Information
-mobile = "0124857985320"
 email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+streetAndNumberLaPlata = "Avinguda de la Plata 83"
+zipCodeAndCityLaPlata = "46006 Valencia"
+mobileLaPlata = "963 33 09 46"
+
+streetAndNumberMenendezPidal = "Calle de Menénedez Pidal 8"
+zipCodeAndCityMenendezPidal = "46009 Valencia"
+mobileMenendezPidal = "963 40 26 20"
+
 # copyright
-copyright = "| Copyright &copy; 2019 [Gethugothemes](https://gethugothemes.com) All Rights Reserved |"
+copyright = "Copyright &copy; 2020 Dulzumat, S.L. Todos los derechos reservados"
 
   # Preloader
   [params.preloader]
@@ -115,23 +106,23 @@ copyright = "| Copyright &copy; 2019 [Gethugothemes](https://gethugothemes.com) 
   # Social Site
   [[params.social]]
   icon = "ti-facebook"
-  link = "#"
+  link = "https://es-es.facebook.com/Dulzumat-107103074234058"
   
-  [[params.social]]
-  icon = "ti-twitter-alt"
-  link = "#"
+  # [[params.social]]
+  # icon = "ti-twitter-alt"
+  # link = "#"
   
-  [[params.social]]
-  icon = "ti-youtube"
-  link = "#"
+  # [[params.social]]
+  # icon = "ti-youtube"
+  # link = "#"
   
   [[params.social]]
   icon = "ti-instagram"
-  link = "#"
+  link = "https://www.instagram.com/dulzumat/"
   
-  [[params.social]]
-  icon = "ti-pinterest"
-  link = "#"
+  # [[params.social]]
+  # icon = "ti-pinterest"
+  # link = "#"
 
   # Contact Form
   [params.contact]
