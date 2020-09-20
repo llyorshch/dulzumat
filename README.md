@@ -19,3 +19,8 @@ Por el momento, la web se pulica en <https://dulzumat.ge.org.es>. Más adelante,
 ## Edición de contenidos
 
 La edición de contenidos se realiza con [Netlify CMS](https://www.netlifycms.org/) en la [URL de administración](https://dulzumat.ge.org.es/admin). La autenticación se configura en [el servicio "Identity" de Netlify](https://app.netlify.com/sites/clever-pare-22cc01/identity).
+
+## Personalización del tema
+
+- Carpeta de imágenes: static/images
+- Carpeta de estilos: themes/hargo/assets/scss
