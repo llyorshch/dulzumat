@@ -8,7 +8,7 @@ price: 2,50 €/ud
 allergens: 1,3,7,14 
 
 # product Images
-# first image will be shown in the product page
+preview: https://fakeimg.pl/620x620/ddd,127/000/?text=Bracito+preview&font_size=100
 images:
   - image: https://fakeimg.pl/500x476/ddd,127/000/?text=Bracito+Nata+Trufa+img+1&font_size=42
   - image: https://fakeimg.pl/500x476/ddd,127/000/?text=Bracito+Nata+Trufa+img+2&font_size=42

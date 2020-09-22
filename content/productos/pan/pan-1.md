@@ -19,7 +19,7 @@ productID: "1"
 type: "productos"
 allergens: 1,3,7
 # product Images
-# first image will be shown in the product page
+preview: https://fakeimg.pl/620x620/ddd,127/000/?text=Pan+1+preview&font_size=100
 images:
   - image: "https://fakeimg.pl/500x476/ddd,127/000/?text=Pan+1+img1"
   - image: "https://fakeimg.pl/500x476/ddd,127/000/?text=Pan+1+img2"

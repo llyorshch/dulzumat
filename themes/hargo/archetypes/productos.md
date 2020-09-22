@@ -9,6 +9,7 @@ allergens: 1,3,7
 
 # product Images
 # first image will be shown in the product page
+previewImage: /images/productos/product-1-thumb.png
 images:
   - image: /images/productos/product-1.png
 ---
