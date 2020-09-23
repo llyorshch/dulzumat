@@ -6,19 +6,19 @@ contact:
     title : "Nuestras pastelerías:"
     pastelerias:
       - pasteleria: 
-        - contentLine : "Avda. de la plata 83"
+        - contentLine : "Avenida de la Plata 83"
         - contentLine : "49006 Valencia"
-        - contentLine : "963 33 09 46"
+        - contentLine : "96 333 09 46"
       - pasteleria:
-        - contentLine : "Calle Menendez Pidal 8"
+        - contentLine : "Calle Menéndez Pidal 8"
         - contentLine : "46009 Valencia"
-        - contentLine : "963 40 26 20"
+        - contentLine : "96 340 26 20"
       
 
 
   # opennig hour
   opennigHour:
-    title : "Horario de Apertura"
+    title : "Horario de Apertura:"
     dayTimeList:
       - dayTime : "De lunes a sábado:"
       - dayTime : "de 7:00 a 21:00"
