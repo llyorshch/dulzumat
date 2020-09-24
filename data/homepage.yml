@@ -29,8 +29,8 @@ cta:
   enable : true
   title : "Encargos"
   content : "Puedes hacer tus pedidos por via telefónica y recoger tu encargo en una de nuestras tiendas, o te lo llevamos donde nos indiques (Valencia capital)."
-  image : "https://fakeimg.pl/180x250/ddd,127/000/?text=CTA"
-  overlayImage : "https://fakeimg.pl/1500x200/ddd,127/000/?text=CTA-overlay"
+  image : "/images/banner-encargos.png"
+  overlayImage : "/images/banner-encargos-fondo.png"
   button:
     label : "Ir a la página de encargos"
     link : "/encargos"
