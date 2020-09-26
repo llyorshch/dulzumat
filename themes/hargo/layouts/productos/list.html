@@ -8,7 +8,7 @@
       {{ range .Data.Pages }}
       <div class="col-lg-4 col-sm-6 mb-4">
         <div class="card border-0 text-center">
-          <a href="{{ .Permalink }}">
+          <a href="{{ .Permalink }}" >
           {{ if (isset .Params "preview") }}
             <img src="{{ .Params.preview | absURL }}" alt="{{ .Title }}" class="card-img-top">
           {{ else if and (isset .Params "images") (isset .Params.images 0)  }}

@@ -3,12 +3,12 @@
 <!-- banner -->
 {{ if .Site.Data.homepage.banner.enable }}
 {{ with .Site.Data.homepage.banner }}
-<section class="section-sm banner-dulzumat">
+<section class="section-sm banner-dulzumat" style="padding-top: 120px; padding-bottom: 120px">
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-5 col-md-6 order-2 order-md-1">
-        <h1>{{ .title | markdownify }}</h1>
-        <p>{{ .content | markdownify }}</p>
+        <h1 class=" text-white">{{ .title | markdownify }}</h1>
+        <p class=" text-white">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
         <a href="{{ .link }}" class="btn btn-primary mr-3">{{ .label }}</a>

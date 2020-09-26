@@ -69,6 +69,7 @@ disqusShortname = ""
 #################### default parameters ################################
 [params]
 logo = "/images/dulzumat-logo-cabecera.png"
+logoFooter = "/images/dulzumat-logo-pie-de-pagina.png"
 home = "Inicio"
 # Meta data
 description = "This is meta description"
@@ -86,7 +87,7 @@ streetAndNumberLaPlata = "Avinguda de la Plata 83"
 zipCodeAndCityLaPlata = "46006 Valencia"
 mobileLaPlata = "963 33 09 46"
 
-streetAndNumberMenendezPidal = "Calle de Menénedez Pidal 8"
+streetAndNumberMenendezPidal = "Calle de Menédez Pidal 8"
 zipCodeAndCityMenendezPidal = "46009 Valencia"
 mobileMenendezPidal = "963 40 26 20"
 

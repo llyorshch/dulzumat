@@ -1,16 +1,18 @@
 {{ if .Site.Data.homepage.cta.enable }}
 <!-- call to  action -->
 {{ with .Site.Data.homepage.cta }}
-<section class="py-4 bg-gradient position-relative">
+<section class="py-4 bg-gradient position-relative mb-1">
   <img src="{{ .overlayImage | absURL }}" class="img-fluid overlay-image" alt="">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-7">
+        <a href="{{ .button.link | absURL }}">
         <h2 class="text-white">{{ .title | markdownify }}</h2>
+      </a>
         <p class="text-white">{{ .content | markdownify }}</p>
-        {{ with .button }}
+        <!-- {{ with .button }}
         <a href="{{ .link | absURL }}" class="btn btn-light">{{ .label }}</a>
-        {{ end }}
+        {{ end }} -->
       </div>
       <div class="col-lg-4 col-md-5 position-relative">
         <img class="cta-image" src="{{ .image | absURL }}" alt="">
