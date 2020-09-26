@@ -3,7 +3,7 @@ banner:
   enable : true
   title : "Pastelería artesana"
   content : "Todo recién hecho en nuestro obrador, de forma totalmente artesanal. Abierto desde 1974."
-  image : "https://fakeimg.pl/726x482/ffffff/?text=Banner"
+  image : "/images/foto-fondo-inicio.jpg"
   # button
   button:
     enable : true

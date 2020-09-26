@@ -68,7 +68,7 @@ disqusShortname = ""
 
 #################### default parameters ################################
 [params]
-logo = "https://fakeimg.pl/143x34/fff,0/000,255/?text=Logo&font_size=32"
+logo = "/images/dulzumat-logo-cabecera.png"
 home = "Inicio"
 # Meta data
 description = "This is meta description"
