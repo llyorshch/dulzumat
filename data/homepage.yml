@@ -83,8 +83,8 @@ video:
   enable : true
   title : "Unas recetas que no se pueden dejar pasar"
   content : "Todo recién hecho en nuestro obrador, de forma totalmente artesanal, con la tradición que respalda nuestro trabajo."
-  videoThumb : "https://fakeimg.pl/495x350/ddd,127/000/?&text=Video+preview"
-  videoURL : "https://www.youtube.com/embed/wf4F2-9UXUo"
+  videoThumb : "/images/dulzumat-video-thumb.jpg"
+  videoURL : "https://www.youtube.com/embed/tiZZG-RLBnI"
 
 
 ######################## Productos #############################
