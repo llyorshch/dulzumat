@@ -5,7 +5,7 @@ draft: false
 weight: 60
 type: especialidad
 images:
-  - image: https://fakeimg.pl/500x476/ddd,127/000/?text=Salado
+  - image: /images/categories/categorias-salado.jpg
 ---
 ## Salado
 

@@ -5,7 +5,7 @@ draft: false
 weight: 50
 type: especialidad
 images:
-  - image: https://fakeimg.pl/500x476/ddd,127/000/?text=Tartas
+  - image: /images/categories/categorias-tartas.jpg
 ---
 ## Tartas
 

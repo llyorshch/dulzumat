@@ -5,7 +5,7 @@ draft: false
 weight: 40
 type: especialidad
 images:
-  - image: https://fakeimg.pl/500x476/ddd,127/000/?text=Pan
+  - image: /images/categories/categorias-pan.jpg
 ---
 ## Pan
 

@@ -5,7 +5,7 @@ draft: false
 weight: 20
 type: especialidad
 images:
-  - image: https://fakeimg.pl/500x476/ddd,127/000/?text=Repostería
+  - image: /images/categories/categorias-reposteria.jpg
 ---
 ## Repostería
 

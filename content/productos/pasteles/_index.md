@@ -6,7 +6,7 @@ weight: 10
 type: especialidad
 
 images:
-  - image: https://fakeimg.pl/500x476/ddd,127/000/?text=Pasteles
+  - image: /images/categories/categorias-pasteles.jpg
 ---
 ## Pasteles
 

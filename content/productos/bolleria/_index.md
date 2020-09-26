@@ -6,7 +6,7 @@ weight: 30
 type: especialidad
 
 images:
-  - image: https://fakeimg.pl/500x476/ddd,127/000/?text=Bollería
+  - image: /images/categories/categorias-bolleria.jpg
 ---
 ## Bollería
 
