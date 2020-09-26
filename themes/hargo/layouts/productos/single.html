@@ -26,7 +26,7 @@
             <span class="lead font-weight-medium">Alergenos:</span>
           </div>
           {{ range split .Params.allergens "," }}
-          <img src="https://fakeimg.pl/25x25/ddd,127/000/?font_size=20&text={{ . }}">
+          <img class="img-fluid mw-50" src="/images/allergens/alergenos-{{ . }}.png" >
           {{ end }}
         </div>
         {{ end }}
