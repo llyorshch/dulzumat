@@ -1,3 +1,33 @@
 ############################ banner ##########################
 snipcart:
     enable : false
+
+allergens:
+  - id: 1
+    name: Contiene gluten
+  - id: 2
+    name: Crustáceos
+  - id: 3
+    name: Huevos	
+  - id: 4
+    name: Pescados	
+  - id: 5
+    name: Cacahuetes	
+  - id: 6
+    name: Soja	
+  - id: 7
+    name: Lácteos	
+  - id: 8
+    name: Frutos de cáscara	
+  - id: 9
+    name: Apio	
+  - id: 10
+    name: Mostaza	
+  - id: 11
+    name: Granos de sésamo	
+  - id: 12
+    name: Dióxido de azufre y sulfitos	
+  - id: 13
+    name: Moluscos	
+  - id: 14
+    name: Altramuces

@@ -5,7 +5,7 @@ draft: false
 type: productos
 
 price: 2,50 €/ud
-allergens: 1,2,7,14 
+allergens: 1,2,3,4,5,6,7,8,9,10,11,12,13,14
 
 # product Images
 preview: https://fakeimg.pl/620x620/ddd,127/000/?text=Bracito+preview&font_size=100

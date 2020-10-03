@@ -21,13 +21,31 @@
           <!--<s>{{ .Params.PriceBefore }}</s>-->
         </div>
         {{ if isset .Params "allergens" }} 
-        <div class="my-4">
+        <div class="">
           <div class="my-2">
             <span class="lead font-weight-medium">Alergenos:</span>
           </div>
-          {{ range split .Params.allergens "," }}
-          <img class="img-fluid mw-50" src="/images/allergens/alergenos-{{ . }}.png" >
-          {{ end }}
+          <div class="container mx-0 px-0">
+            <div class="row">
+              {{ $allergens := .Site.Data.productos.allergens}}
+              {{ range split .Params.allergens "," }}
+              <div class="col-3">
+                <div class="container">
+                  <div class="row">
+                      <div class="col">
+                        <img class="img-fluid" src="/images/allergens/alergenos-{{ . }}.png" >
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col text-center">
+                        <p style="line-height: 0.9; "><small>{{ index (index $allergens ( sub (int .) 1)) "name" }}</small></p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              {{ end }}                
+            </div>
+          </div>
         </div>
         {{ end }}
         {{ if .Site.Data.homepage.snipcart.enable }}
