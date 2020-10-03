@@ -1,4 +1,4 @@
-<footer class="section pb-0 pt-3 dulzumat-dark">
+<footer class="section pb-0 pt-3 dulzumat-bg-dark-color mb-1">
   <div class="container pb-5">
     <div class="row justify-content-between">
       <div class="col-12 text-center">
@@ -66,10 +66,12 @@
       </div>
     </div>
   </div>
-  <div class="container ">
+</footer>
+<footer class="section pb-0 pt-0 bg-primary">
+  <div class="container">
     <div class="row bg-primary">
-      <div class="col-12 w-100 text-center py-4">
-        {{ .Site.Params.copyright | markdownify  }}
+      <div class="col-12 w-100 text-center py-2">
+        <small>{{ .Site.Params.copyright | markdownify  }}</small>
       </div>
     </div>
   </div>
