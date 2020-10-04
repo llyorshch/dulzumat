@@ -1,0 +1,12 @@
+---
+title: "Lionesas"
+date: 2020-10-04T12:43:30+02:00
+draft: false
+price: 24 €/kg
+allergens: 1,3,7
+preview: /images/products/reposteria-lionesas-thumb.jpg
+images:
+  - image: /images/products/reposteria-lionesas.jpg
+type: productos
+weight: 1000
+---
