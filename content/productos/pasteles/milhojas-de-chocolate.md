@@ -1,5 +1,5 @@
 ---
-title: "Milhojas De Chocolate"
+title: "Milhojas de chocolate"
 date: 2020-10-04T11:42:04+02:00
 draft: false
 price: 1,65 €

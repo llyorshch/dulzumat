@@ -1,5 +1,5 @@
 ---
-title: "Nata Pinya"
+title: "Nata / Piña"
 date: 2020-10-04T11:45:54+02:00
 draft: false
 price: 1,75 €

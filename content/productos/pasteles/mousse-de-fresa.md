@@ -1,5 +1,5 @@
 ---
-title: "Mousse De Fresa"
+title: "Mousse de fresa"
 date: 2020-10-04T11:44:23+02:00
 draft: false
 price: 1,75 €

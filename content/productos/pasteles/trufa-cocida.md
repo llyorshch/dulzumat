@@ -1,5 +1,5 @@
 ---
-title: "Trufa Cocida"
+title: "Trufa cocida"
 date: 2020-10-04T11:47:09+02:00
 draft: false
 price: 1,65 €

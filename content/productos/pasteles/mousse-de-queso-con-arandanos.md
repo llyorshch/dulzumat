@@ -1,5 +1,5 @@
 ---
-title: "Mousse De Queso Con Arandanos"
+title: "Mousse de queso con arandanos"
 date: 2020-10-04T11:45:16+02:00
 draft: false
 price: 1,75 €

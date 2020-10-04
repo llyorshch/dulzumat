@@ -1,5 +1,5 @@
 ---
-title: "Mousse De Tres Chocolates"
+title: "Mousse de tres chocolates"
 date: 2020-10-04T11:45:32+02:00
 draft: false
 price: 1,90 €

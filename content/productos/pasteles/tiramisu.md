@@ -1,5 +1,5 @@
 ---
-title: "Tiramisu"
+title: "Tiramisú"
 date: 2020-10-04T11:46:58+02:00
 draft: false
 price: 1,90 €

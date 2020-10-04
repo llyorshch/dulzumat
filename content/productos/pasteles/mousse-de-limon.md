@@ -1,5 +1,5 @@
 ---
-title: "Mousse De Limon"
+title: "Mousse de limon"
 date: 2020-10-04T11:44:31+02:00
 draft: false
 price: 1,75 €

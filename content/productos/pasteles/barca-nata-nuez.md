@@ -1,5 +1,5 @@
 ---
-title: "Barca Nata Nuez"
+title: "Barca nata/nuez"
 date: 2020-10-04T11:40:01+02:00
 draft: false
 price: 1,90 €

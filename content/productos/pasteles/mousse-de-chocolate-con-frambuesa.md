@@ -1,5 +1,5 @@
 ---
-title: "Mousse De Chocolate Con Frambuesa"
+title: "Mousse de chocolate con frambuesa"
 date: 2020-10-04T11:43:16+02:00
 draft: false
 price: 1,75 €

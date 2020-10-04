@@ -1,5 +1,5 @@
 ---
-title: "Palo De Crema"
+title: "Palo de crema"
 date: 2020-10-04T11:46:08+02:00
 draft: false
 price: 1,65 €

@@ -1,5 +1,5 @@
 ---
-title: "Tarrina De Avellana"
+title: "Tarrina de avellana"
 date: 2020-10-04T11:46:49+02:00
 draft: false
 price: 1,90 €

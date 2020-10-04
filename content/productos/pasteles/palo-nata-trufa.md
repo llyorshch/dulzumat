@@ -1,5 +1,5 @@
 ---
-title: "Palo Nata Trufa"
+title: "Palo nata/trufa"
 date: 2020-10-04T11:46:14+02:00
 draft: false
 price: 1,75 €

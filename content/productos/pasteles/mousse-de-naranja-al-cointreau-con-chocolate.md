@@ -1,5 +1,5 @@
 ---
-title: "Mousse De Naranja Al Cointreau Con Chocolate"
+title: "Mousse de naranja al Cointreau con chocolate"
 date: 2020-10-04T11:44:54+02:00
 draft: false
 price: 1,75 €

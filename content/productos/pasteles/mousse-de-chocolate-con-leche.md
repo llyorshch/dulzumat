@@ -1,5 +1,5 @@
 ---
-title: "Mousse De Chocolate Con Leche"
+title: "Mousse de chocolate con leche"
 date: 2020-10-04T11:43:36+02:00
 draft: false
 price: 1,75 €
