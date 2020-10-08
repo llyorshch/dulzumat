@@ -83,11 +83,11 @@ mapMarker = "images/marker.png"
 googleAnalitycsID = "" # Your ID
 # Contact Information
 email = "demo@email.com"
-streetAndNumberLaPlata = "Avinguda de la Plata 83"
+streetAndNumberLaPlata = "Avenida de la Plata 83"
 zipCodeAndCityLaPlata = "46006 Valencia"
 mobileLaPlata = "963 33 09 46"
 
-streetAndNumberMenendezPidal = "Calle de Menédez Pidal 8"
+streetAndNumberMenendezPidal = "Avenida de Menéndez Pidal 8"
 zipCodeAndCityMenendezPidal = "46009 Valencia"
 mobileMenendezPidal = "963 40 26 20"
 

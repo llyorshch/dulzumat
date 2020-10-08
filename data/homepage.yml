@@ -28,7 +28,7 @@ about:
 cta:
   enable : true
   title : "Encargos"
-  content : "Puedes hacer tus pedidos por via telefónica y recoger tu encargo en una de nuestras tiendas, o te lo llevamos donde nos indiques (Valencia capital)."
+  content : "Puedes hacer tus pedidos por via telefónica y recoger tu encargo en una de nuestras tiendas, o te lo llevamos donde nos indiques."
   image : "/images/banner-encargos.png"
   overlayImage : "/images/banner-encargos-fondo.png"
   button:
@@ -84,7 +84,7 @@ video:
   title : "Unas recetas que no se pueden dejar pasar"
   content : "Todo recién hecho en nuestro obrador, de forma totalmente artesanal, con la tradición que respalda nuestro trabajo."
   videoThumb : "/images/dulzumat-video-thumb.jpg"
-  videoURL : "https://www.youtube.com/embed/tiZZG-RLBnI"
+  videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
   
 
 
