@@ -4,49 +4,50 @@
 
 {{ if .Site.Data.contact.contact.enable }}
 <section class="section pt-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-sm-6">
-        {{ with .Site.Data.contact.contact.office }}
-        <h3 class="mb-4">{{ .title | markdownify }}</h3>
-        {{ range .pastelerias}}
-        <div class="mb-2">
-            <ul class="list-unstyled">
-            {{ range .pasteleria}}
-                <li class="mb-1">{{ .contentLine | markdownify }} </li>
-            {{ end }}
-            </ul>
+  {{ with .Site.Data.contact.contact.office }}
+    <div class="container px-0">
+      <div class="row-sm">
+        <div class="col-lg-12 col-sm-6">
+          <h3 class="">Nuestras pastelerías:</h3>
+        </div>
+      </div>{{/* row */}}
+      {{ range .pastelerias }}
+      <div class="row">
+        <div class="col-lg-12 col-sm-6">
+          <div class="container pt-4">
+            <div class="row py-2">
+              <div class="col">
+                <h5>{{ .pasteleria }}</h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <ul class="list-unstyled">
+                  {{ range .direccion }}
+                  <li class="mb-1 mx-3">{{ .direccionLine | markdownify }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <h4>Horario de apertura:</h4>
+                <ul class="list-unstyled">
+                {{ range .horario }}
+                  <li class="mb-1 mx-3">{{ .horarioLine | markdownify }}</li>
+                {{ end }}
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <iframe class="mx-3" src="{{ .mapRef }}" width="900" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
           </div>
-          {{ end }}
-        {{ end }}
+        </div>
       </div>
-      <div class="col-lg-3 offset-lg-1 col-sm-6">
-        {{ with .Site.Data.contact.contact.opennigHour }}
-        <h3 class="mb-2">{{ .title | markdownify }}</h3>
-        <ul class="list-unstyled">
-          {{ range .dayTimeList }}
-          <li class="mb-1">{{ .dayTime | markdownify }}</li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-    </div>
-  </div>
+      {{ end }}{{/* range .pastelerias */}}
+    </div>{{/* container */}} 
+  {{ end }}{{/* with */}}
 </section>
-{{ end }}
-
-{{ if .Site.Data.contact.map.enable }}
-<section class="section pt-0">
-  <div class="container mb-4">
-  <h3 class="mb-2">Ubicaciones</h3>
-  </div>
-  {{ range .Site.Data.contact.map.pastelerias}}
-  <div class="container mb-3">
-    <iframe src="{{ .mapRef }}" width="900" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-  </div>
-  {{ end }}
-</section>
-{{ end }}
-
-
-{{ end }}
+{{ end }}{{/* if .Site.Data.contact.contact.enable */}}
+{{ end }}{{/* define "main" */}}
