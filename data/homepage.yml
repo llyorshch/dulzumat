@@ -65,17 +65,17 @@ material:
 ########################### Advantage #########################
 advantage:
   enable : false
-  title : "Advantages Of Using <br> Our Product"
+  title : "Sant Donís"
   subtitle : "Lorem ipsum dolor sit amet, da decal consetetur<br> sadipscing elitr, sed diam nonumya eirmod"
-  image : "images/advantage.png"
-  advantageList:
-    # advantage list loop
-    - listItem : "Extremely lightweight"
-    - listItem : "Excellent breathability"
-    - listItem : "Can increase Cell activation"
-    - listItem : "Glowing Skin In 7 Days"
-    - listItem : "Increasing Glow Of Face"
-    - listItem : "More Beautiful Face Skin"
+  image : "images/campaign/sandonis.jpg"
+  # advantageList:
+  #   # advantage list loop
+  #   - listItem : "Extremely lightweight"
+  #   - listItem : "Excellent breathability"
+  #   - listItem : "Can increase Cell activation"
+  #   - listItem : "Glowing Skin In 7 Days"
+  #   - listItem : "Increasing Glow Of Face"
+  #   - listItem : "More Beautiful Face Skin"
 
 
 ######################## Promo Video ##########################
