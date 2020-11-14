@@ -92,7 +92,7 @@ zipCodeAndCityMenendezPidal = "46009 Valencia"
 mobileMenendezPidal = "963 40 26 20"
 
 # copyright
-copyright = "Copyright &copy; 2020 Dulzumat, S.L. Todos los derechos reservados"
+copyright = "Copyright &copy; 2020 Dulzumat. Todos los derechos reservados"
 
   # Preloader
   [params.preloader]
