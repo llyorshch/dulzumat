@@ -1,8 +1,8 @@
 ---
-title: "Bandeja de fruta"
+title: "Banda de fruta"
 date: 2020-10-04T12:44:26+02:00
 draft: false
-price: 11 €/kg
+price: 11 €/ud.
 allergens: 1,3,7
 preview: /images/products/reposteria-bandeja-de-fruta-thumb.jpg
 images:

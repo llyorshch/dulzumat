@@ -7,6 +7,4 @@ type: especialidad
 images:
   - image: /images/categories/categorias-tartas.jpg
 ---
-## Tartas
-
-Tartas
+Como referencia, una tarta para 8-10 personas, es 1 kg aproximadamente. 

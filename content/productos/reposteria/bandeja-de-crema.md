@@ -1,8 +1,8 @@
 ---
-title: "Bandeja de crema"
+title: "Banda de crema"
 date: 2020-10-04T12:44:30+02:00
 draft: false
-price: 11 €/kg
+price: 11 €/ud.
 allergens: 1,3,7
 preview: /images/products/reposteria-bandeja-de-crema-thumb.jpg
 images:
