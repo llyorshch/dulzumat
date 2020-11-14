@@ -7,6 +7,3 @@ type: especialidad
 images:
   - image: /images/categories/categorias-salado.jpg
 ---
-## Salado
-
-Salado

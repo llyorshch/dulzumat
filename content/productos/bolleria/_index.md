@@ -8,6 +8,3 @@ type: especialidad
 images:
   - image: /images/categories/categorias-bolleria.jpg
 ---
-## Bollería
-
-Bollería

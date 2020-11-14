@@ -8,6 +8,3 @@ type: especialidad
 images:
   - image: /images/categories/categorias-pasteles.jpg
 ---
-## Pasteles
-
-Pasteles

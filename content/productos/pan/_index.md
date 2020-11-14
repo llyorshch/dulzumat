@@ -7,6 +7,3 @@ type: especialidad
 images:
   - image: /images/categories/categorias-pan.jpg
 ---
-## Pan
-
-Pan
