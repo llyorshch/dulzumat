@@ -28,8 +28,13 @@
             <p>{{ .Params.description }}</p>
             {{ end }}
             {{ if isset .Params "price" }}
-            <div class="mb-4">
+            <div class="mb-0">
               <span class="lead text-primary font-weight-medium">{{ .Params.Price }}</span>
+            </div>
+            {{ end }}
+            {{ if isset .Params "clarification" }}
+            <div class="mb-2">
+              <span class="text-secondary font-weight-light">{{ .Params.Clarification }}</span>
             </div>
             {{ end }}
             {{ if .Site.Data.homepage.snipcart.enable }}

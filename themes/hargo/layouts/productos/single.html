@@ -16,10 +16,15 @@
         {{ if .Site.Params.rating.enable }}
         <div class="rw-ui-container"></div>
         {{ end }}
+        {{ if isset .Params "price" }} 
         <div class="my-4">
-          <span class="lead text-primary font-weight-medium">{{ .Params.Price }}</span>
+          <div class="lead text-primary font-weight-medium">{{ .Params.Price }}</div>
+          {{ if isset .Params "clarification" }} 
+            <div class="text-secondary font-weight-light">{{ .Params.Clarification }}</div>
+          {{ end }}
           <!--<s>{{ .Params.PriceBefore }}</s>-->
         </div>
+        {{ end }}
         {{ if isset .Params "allergens" }} 
         <div class="">
           <div class="my-2">
