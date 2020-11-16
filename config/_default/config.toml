@@ -72,7 +72,7 @@ logo = "/images/dulzumat-logo-cabecera.png"
 logoFooter = "/images/dulzumat-logo-pie-de-pagina.png"
 home = "Inicio"
 # Meta data
-description = "This is meta description"
+description = "Dulzumat. Pastelería artesana en Valencia desde 1974. Todo recién hecho en nuestro obrador, de forma totalmente artesanal."
 author = "Themefisher"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
@@ -82,7 +82,7 @@ mapMarker = "images/marker.png"
 # Google Analitycs
 googleAnalitycsID = "" # Your ID
 # Contact Information
-email = "demo@email.com"
+email = "dulzumat@dulzumat.com"
 streetAndNumberLaPlata = "Avenida de la Plata 83"
 zipCodeAndCityLaPlata = "46006 Valencia"
 mobileLaPlata = "963 33 09 46"
