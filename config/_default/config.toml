@@ -43,11 +43,16 @@ disqusShortname = ""
   name = "Encargos"
   URL = "encargos"
   weight = 2
-  
+
+  [[menu.main]]
+  name = "Galería"
+  URL = "galeria"
+  weight = 3
+
   [[menu.main]]
   name = "Contacto"
   URL = "contacto"
-  weight = 3
+  weight = 4
 
   ############# footer menu #############
   [[menu.footer]]
@@ -60,10 +65,15 @@ disqusShortname = ""
   URL = "encargos"
   weight = 2
   
+  [[menu.main]]
+  name = "Galería"
+  URL = "galeria"
+  weight = 3
+
   [[menu.footer]]
   name = "Contacto"
   URL = "contacto"
-  weight = 3
+  weight = 4
 
 
 #################### default parameters ################################
@@ -130,3 +140,6 @@ copyright = "Copyright &copy; 2020 Dulzumat. Todos los derechos reservados"
   # Contact Form
   [params.contact]
   formAction = "#" # contact form works with formspree.io
+
+  # Enable shortcodes
+  enableInlineShortcodes = true
