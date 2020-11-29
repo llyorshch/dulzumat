@@ -63,19 +63,14 @@ material:
       content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
 
 ########################### Advantage #########################
-advantage:
+promo:
   enable : false
   title : "Sant Donís"
-  subtitle : "Lorem ipsum dolor sit amet, da decal consetetur<br> sadipscing elitr, sed diam nonumya eirmod"
-  image : "images/campaign/sandonis.jpg"
-  # advantageList:
-  #   # advantage list loop
-  #   - listItem : "Extremely lightweight"
-  #   - listItem : "Excellent breathability"
-  #   - listItem : "Can increase Cell activation"
-  #   - listItem : "Glowing Skin In 7 Days"
-  #   - listItem : "Increasing Glow Of Face"
-  #   - listItem : "More Beautiful Face Skin"
+  content : "Lorem ipsum dolor sit amet, da decal consetetur<br> sadipscing elitr, sed diam nonumya eirmod"
+  videoThumb : "images/campaign/sandonis.jpg"
+  videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
+  #image: "images/campaign/sandonis.jpg"
+  #link: "/encargos"
 
 
 ######################## Promo Video ##########################
