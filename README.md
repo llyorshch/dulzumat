@@ -2,7 +2,7 @@
 
 Website para la web de Dulzumat.
 
-Website construido con [Hugo](https://gohugo.io/), publicado en [Netlify](https://www.netlify.com/). 
+Website construido con [Hugo](https://gohugo.io/), publicado en [Netlify](https://www.netlify.com/).
 
 ## Trabajo en local
 
