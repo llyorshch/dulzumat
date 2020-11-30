@@ -64,7 +64,7 @@ material:
 
 ########################### Advantage #########################
 promo:
-  enable : false
+  enable : true
   title : "Sant Donís"
   content : "Lorem ipsum dolor sit amet, da decal consetetur<br> sadipscing elitr, sed diam nonumya eirmod"
   videoThumb : "images/campaign/sandonis.jpg"
