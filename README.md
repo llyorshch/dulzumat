@@ -4,6 +4,8 @@ Website para la web de Dulzumat.
 
 Website construido con [Hugo](https://gohugo.io/), publicado en [Netlify](https://www.netlify.com/). 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/288f22d4-c339-48d4-8a02-0578833b1e6a/deploy-status)](https://app.netlify.com/sites/clever-pare-22cc01/deploys)
+
 ## Trabajo en local
 
 Para trabajar en local, [instalar Hugo](https://gohugo.io/getting-started/installing/) y ejecutar `hugo server` en la raíz del proyecto para obtener un servidor local en <http://localhost:1313>. Los cambios en los ficheros del proyecto se reflejarán automáticamente en el servidor local.
