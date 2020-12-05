@@ -20,6 +20,12 @@ command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.69.2"
 
+[context.staging]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL -e staging"
+
+[context.staging.environment]
+HUGO_VERSION = "0.79.0"
+
 [context.branch-deploy]
 command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
