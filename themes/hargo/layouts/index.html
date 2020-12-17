@@ -107,11 +107,13 @@
       {{ if isset . "image" }}
       <div class="col-md-6">
         {{ if isset . "link"}}
+        <div class="card border-0 text-center">
           <a href="{{ .link | absURL }}">
-        {{ end }}
-          <img src="{{ .image | absURL}}" class="img-fluid" alt="">
-        {{ if isset . "link"}}
+          {{ end }}
+            <img src="{{ .image | absURL}}" class="card-img-top" alt="">
+          {{ if isset . "link"}}
           </a>
+        </div>
         {{ end }}
       </div>
       {{ else }}
