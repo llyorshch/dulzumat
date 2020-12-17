@@ -64,13 +64,18 @@ material:
 
 ########################### Advantage #########################
 promo:
-  enable : false
-  title : "Sant Donís"
-  content : "Lorem ipsum dolor sit amet, da decal consetetur<br> sadipscing elitr, sed diam nonumya eirmod"
-  videoThumb : "images/campaign/sandonis.jpg"
-  videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
-  #image: "images/campaign/sandonis.jpg"
-  #link: "/encargos"
+  enable : true
+  title : "Troncos de Navidad"
+  content : "Ven a probar nuestros troncos de Navidad. Seis variadades diferentes: 
+  \n- Tronco clásico de trufa (pequeño y grande)
+  \n- Tronco clásico de nata (pequeño y grande)
+  \n- Tronco de mousse de chocolate con crujiente de chocolate blanco y gelificado de chocolate
+  \n- Tronco de mousse de turrón con turrón de yema, crujiente y bizcocho de chocolate.
+\n\nTambién puedes llamarnos y los llevamos donde nos indiques."
+  # videoThumb : "images/campaign/sandonis.jpg"
+  # videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
+  image: "images/campaign/tronco_navidad_crujiente.jpg"
+  link: "/encargos"
 
 
 ######################## Promo Video ##########################
