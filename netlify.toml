@@ -3,9 +3,10 @@ publish = "public"
 command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.production.environment]
-HUGO_VERSION = "0.69.2"
+HUGO_VERSION = "0.79.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
+DEPLOY_PRIME_URL = "https://dulzumat.ge.org.es"
 
 [context.staging]
 command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL -e staging"
