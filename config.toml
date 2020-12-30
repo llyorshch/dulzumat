@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://localhost:1313/"
+baseURL = "https://www.dulzumat.com/"
 languageCode = "en-us"
 title = "Dulzumat"
 theme = "hargo"
