@@ -64,7 +64,7 @@ material:
 
 ########################### Advantage #########################
 promo:
-  enable : true
+  enable : false
   title : "Troncos de Navidad"
   content : "Ven a probar nuestros troncos de Navidad. Seis variadades diferentes: 
   \n- Tronco clásico de trufa (pequeño y grande)
