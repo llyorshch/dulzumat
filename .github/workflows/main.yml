@@ -43,4 +43,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: public/
           server-dir: public_html/
-          state-name: ../.ftp-deploy-sync-state.json
+          state-name: ../.github/workflows/.ftp-deploy-sync-state.json
