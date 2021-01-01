@@ -43,5 +43,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: public/
           server-dir: public_html/
-          state-name: /home/runner/work/dulzumat/dulzumat/.ftp-deploy-sync-state.json
           dry-run: true
