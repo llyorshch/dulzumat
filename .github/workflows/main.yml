@@ -44,4 +44,3 @@ jobs:
           local-dir: public/
           server-dir: public_html/
           state-name: ../.ftp-deploy-sync-state.json
-          dry-run: true
