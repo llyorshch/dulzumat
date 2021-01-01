@@ -5,10 +5,10 @@ name: CI
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  # push:
+  #   branches: [ master ]
+  # pull_request:
+  #   branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -35,22 +35,12 @@ jobs:
       - name: Show current forlder
         # For debugging list files from current directory to console
         run: pwd
-      # - name: Upload Generated Site (FTP)
-      #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      #   with:
-      #     server: ${{ secrets.FTP_SERVER }}
-      #     username: ${{ secrets.FTP_USERNAME }}
-      #     password: ${{ secrets.FTP_PASSWORD }}
-      #     local-dir: public/
-      #     server-dir: public_html/
-      #     state-name: ../.ftp-deploy-sync-state.json
-      - name: rsync deployments
-        uses: burnett01/rsync-deployments@4.1
+      - name: Upload Generated Site (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          switches: -avzr --delete
-          path: public/
-          remote_path: public_html/
-          remote_host: ${{ secrets.FTP_SERVER }}
-          remote_port: ${{ secrets.SSH_PORT }}
-          remote_user: ${{ secrets.FTP_USERNAME }}
-          remote_key: ${{ secrets.SSH_KEY }}
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: public/
+          server-dir: public_html/
+          state-name: ../.ftp-deploy-sync-state.json
