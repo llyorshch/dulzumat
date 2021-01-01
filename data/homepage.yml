@@ -28,7 +28,7 @@ about:
 cta:
   enable : true
   title : "Encargos"
-  content : "Puedes hacer tus pedidos por telefono y recoger tu encargo en una de nuestras tiendas, o te lo llevamos donde nos indiques."
+  content : "Puedes hacer tus pedidos por teléfono y recoger tu encargo en una de nuestras tiendas, o te lo llevamos donde nos indiques."
   image : "/images/banner-encargos.png"
   overlayImage : "/images/banner-encargos-fondo.png"
   button:
