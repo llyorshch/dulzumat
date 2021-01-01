@@ -32,6 +32,9 @@ jobs:
       - name: List files for debugging
         # For debugging list files from current directory to console
         run: ls
+      - name: Show current forlder
+        # For debugging list files from current directory to console
+        run: pwd
       - name: Upload Generated Site (FTP)
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
@@ -40,5 +43,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: public/
           server-dir: public_html/
-          state-name: ~/.ftp-deploy-sync-state.json
+          state-name: /home/runner/work/dulzumat/dulzumat/.ftp-deploy-sync-state.json
           dry-run: true
