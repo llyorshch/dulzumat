@@ -35,12 +35,20 @@ jobs:
       - name: Show current forlder
         # For debugging list files from current directory to console
         run: pwd
-      - name: Upload Generated Site (FTP)
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      # - name: Upload Generated Site (FTP)
+      #   uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      #   with:
+      #     server: ${{ secrets.FTP_SERVER }}
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     local-dir: public/
+      #     server-dir: public_html/
+      #     state-name: ../.ftp-deploy-sync-state.json
+      - name: 📂 Sync files
+        uses: SamKirkland/web-deploy@1.0.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: public/
-          server-dir: public_html/
-          state-name: ../.ftp-deploy-sync-state.json
+          target-server: ${{ secrets.FTP_SERVER }}
+          remote-user: ${{ secrets.FTP_USERNAME }}
+          remote-key: ${{ secrets.SSH_KEY }}
+          source-path: public/
+          destination-path: public_html/
