@@ -44,11 +44,12 @@ jobs:
       #     local-dir: public/
       #     server-dir: public_html/
       #     state-name: ../.ftp-deploy-sync-state.json
-      - name: 📂 Sync files
-        uses: SamKirkland/web-deploy@1.0.0
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@4.1
         with:
-          target-server: ${{ secrets.FTP_SERVER }}
-          remote-user: ${{ secrets.FTP_USERNAME }}
-          remote-key: ${{ secrets.SSH_KEY }}
-          source-path: public/
-          destination-path: public_html/
+          switches: -avzr --delete
+          path: public/
+          remote_path: public_html/
+          remote_host: ${{ secrets.FTP_SERVER }}
+          remote_user: ${{ secrets.FTP_USERNAME }}
+          remote_key: ${{ secrets.SSH_KEY }}
