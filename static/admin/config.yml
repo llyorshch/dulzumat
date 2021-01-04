@@ -1,43 +1,28 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: static/images
-public_folder: /images
+media_folder: static/images/uploads
+public_folder: /images/uploads
+publish_mode: editorial_workflow
+# when using the default proxy server port
+# local_backend: true
 collections:
-  # - name: 'blog'
-  #   label: 'Blog'
-  #   folder: 'content/blog'
-  #   create: true
-  #   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-  #   editor:
-  #     preview: true
-  #   fields:
-  #     - { label: 'Title', name: 'title', widget: 'string' }
-  #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-  #     - { label: 'Description', name: 'description', widget: 'string' }
-  #     - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'productos'
-    label: 'Productos'
-    folder: 'content/productos'
+  - name: 'productos_bolleria'
+    label: 'Productos - Bollería'
+    folder: 'content/productos/bolleria'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'ShortDescription', name: 'shortDescription', widget: 'markdown' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - { label: 'Type', name: 'type', widget: 'string', default: 'productos'}
       - {
-          label: 'Image',
-          name: 'image',
-          widget: 'image',
-          default: 'static/images/products/product-1.png',
-          media_library: {
-            config: {
-              multiple: false
-            }
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
           }
-      }
