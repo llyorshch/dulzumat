@@ -6,5 +6,5 @@ weight: 30
 type: especialidad
 
 images:
-  - image: /images/categories/categorias-bolleria.jpg
+  - images/categories/categorias-bolleria.jpg
 ---

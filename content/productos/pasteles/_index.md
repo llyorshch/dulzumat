@@ -6,5 +6,5 @@ weight: 10
 type: especialidad
 
 images:
-  - image: /images/categories/categorias-pasteles.jpg
+  - images/categories/categorias-pasteles.jpg
 ---

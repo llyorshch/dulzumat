@@ -5,5 +5,5 @@ draft: false
 weight: 40
 type: especialidad
 images:
-  - image: /images/categories/categorias-pan.jpg
+  - images/categories/categorias-pan.jpg
 ---

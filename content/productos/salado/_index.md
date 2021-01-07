@@ -5,5 +5,5 @@ draft: false
 weight: 60
 type: especialidad
 images:
-  - image: /images/categories/categorias-salado.jpg
+  - images/categories/categorias-salado.jpg
 ---

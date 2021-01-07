@@ -5,5 +5,5 @@ draft: false
 weight: 20
 type: especialidad
 images:
-  - image: /images/categories/categorias-reposteria.jpg
+  - images/categories/categorias-reposteria.jpg
 ---

@@ -5,9 +5,9 @@ draft: false
 price: 24 €/kg.
 clarification: 32 piezas/kg aprox.
 allergens: 1,3,7
-preview: /images/products/reposteria-lionesas-thumb.jpg
+preview: images/products/reposteria-lionesas-thumb.jpg
 images:
-  - image: /images/products/reposteria-lionesas.jpg
+  - images/products/reposteria-lionesas.jpg
 type: productos
 weight: 1000
 ---
