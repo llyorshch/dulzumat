@@ -5,7 +5,7 @@ media_folder: static/images/uploads
 public_folder: images/uploads
 publish_mode: editorial_workflow
 # when using the default proxy server port
-local_backend: true
+# local_backend: true
 collections:
   - name: 'pasteles'
     label: 'Productos - Pasteles'
@@ -35,6 +35,106 @@ collections:
   - name: 'reposteria'
     label: 'Productos - Repostería'
     folder: 'content/productos/reposteria'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - {
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
+          }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
+  - name: 'bolleria'
+    label: 'Productos - Bollería'
+    folder: 'content/productos/bolleria'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - {
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
+          }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
+  - name: 'pan'
+    label: 'Productos - Pan'
+    folder: 'content/productos/pan'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - {
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
+          }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
+  - name: 'tartas'
+    label: 'Productos - Tartas'
+    folder: 'content/productos/tartas'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - {
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
+          }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
+  - name: 'salado'
+    label: 'Productos - Salado'
+    folder: 'content/productos/salado'
     media_folder: '../../../static/images/products'
     public_folder: 'images/products'
     filter: { field: 'type', value: 'productos' }
