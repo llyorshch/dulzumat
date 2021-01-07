@@ -10,6 +10,7 @@ collections:
   - name: 'productos'
     label: 'Productos'
     folder: 'content/productos'
+    filter: { field: 'section' , value: '{{section}}' }
     create: true
     slug: '{{slug}}'
     editor:
