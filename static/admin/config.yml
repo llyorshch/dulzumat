@@ -2,31 +2,33 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: static/images/uploads
-public_folder: /images/uploads
+public_folder: images/uploads
 publish_mode: editorial_workflow
 # when using the default proxy server port
-# local_backend: true
+local_backend: true
 collections:
-  - name: 'productos'
-    label: 'Productos'
-    folder: 'content/productos'
+  - name: 'pasteles'
+    label: 'Productos - Pasteles'
+    folder: 'content/productos/pasteles'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
     create: true
     slug: '{{slug}}'
     editor:
       preview: true
-    nested:
-          depth: 3 # max depth to show in the collection tree
-          summary: '{{title}}' # optional summary for a tree node, defaults to the inferred title field
-    meta: { path: { widget: string, label: 'Path', index_file: 'index' } }
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
       - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
-      - { label: 'Type', name: 'type', widget: 'string', default: 'productos'}
       - {
           label: 'Images',
           name: 'images',
           widget: 'list',
           field: { label: 'Image', name: 'image', widget: 'image' }
           }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
