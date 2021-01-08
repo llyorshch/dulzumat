@@ -29,7 +29,7 @@ promo:
   link: /encargos
   videoThumb: images/sandonis.jpg
   image: images/tronco_navidad_crujiente.jpg
-  enable: true
+  enable: false
 video:
   title: Unas recetas que no se pueden dejar pasar
   content: Todo recién hecho en nuestro obrador, de forma totalmente artesanal,
