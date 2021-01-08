@@ -4,7 +4,8 @@ backend:
 media_folder: static/images/uploads
 public_folder: images/uploads
 publish_mode: editorial_workflow
-# Enable the local backend just when you run the Netlify CMS app in a localhost environment
+# Enable the local backend when you run the Netlify CMS app
+# in a localhost environment with `npx netlify-cms-proxy-server`
 local_backend: true
 collections:
   - label: "Páginas"
@@ -14,12 +15,14 @@ collections:
       - label: "Página principal"
         name: "home"
         file: "data/homepage.yml"
+        media_folder: '../static/images'
+        public_folder: 'images/'
         fields:
           - label: Banner
             name: banner
             widget: object
             fields:
-              - { label: "Banner habilitado", name: enable, widget: boolean }
+              - { label: "Banner habilitado", name: enable, widget: boolean, required: false, default: true }
               - { label: "Título", name: title, widget: string }
               - { label: "Descripción", name: content, widget: string }
               - { label: "Imágen", name: image, widget: image }
@@ -27,33 +30,73 @@ collections:
                 name: button
                 widget: object
                 fields:
-                - { label: "Botón habilitado", name: enable, widget: boolean }
-                - { label: "Etiqueta", name: label, widget: string }
-                - { label: "Enlace", name: link, widget: string }
+                  - { label: "Botón habilitado", name: enable, widget: boolean, required: false, default: true }
+                  - { label: "Etiqueta", name: label, widget: string }
+                  - { label: "Enlace", name: link, widget: string }
           - label: Campañas
             name: promo
             widget: object
             fields:
-            - { label: "Habilitar campaña", name: enable, widget: boolean }
-            - { label: "Título", name: title, widget: string }
-            - { label: "Contenido", name: content, widget: markdown }
-            - { label: "Tipo de contenido multimedia", name: type, widget: select, options: ['image','video'], default: 'image' }
-            - { label: "Video thumbnail", name: videoThumb, widget: image }
-            - { label: "Video URL", name: videoURL, widget: string }
-            - { label: "Imágen", name: image, widget: image }
-            - { label: "Link de la imagen", name: link, widget: string }
+              - { label: "Habilitar campaña", name: enable, widget: boolean, required: false, default: false }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Contenido", name: content, widget: markdown }
+              - { label: "Tipo de contenido multimedia", name: type, widget: select, options: ['image','video'], default: 'image' }
+              - { label: "Video thumbnail", name: videoThumb, widget: image }
+              - { label: "Video URL", name: videoURL, widget: string }
+              - { label: "Imágen", name: image, widget: image }
+              - { label: "Link de la imagen", name: link, widget: string }
           - label: Video
             name: video
+            widget: object
+            fields:
+              - { label: "Habilitar video", name: enable, widget: boolean, required: false, default: true }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Contenido", name: content, widget: string }
+              - { label: "Imagen de previsualización", name: videoThumb, widget: image }
+              - { label: "URL del video", name: videoURL, widget: string }
           - label: Call to Action
             name: cta
+            widget: object
+            fields:
+              - { label: "Habilitar Call-to-Action", name: enable, widget: boolean, required: false, default: true }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Contenido", name: content, widget: string }
+              - { label: "Imagen", name: image, widget: image }
+              - { label: "Imagen superpuesta", name: overlayImage, widget: image }
+              - label: "Botón"
+                name: button
+                widget: object
+                fields:
+                  - { label: "Etiqueta", name: label, widget: string }
+                  - { label: "Enlace", name: link, widget: string }
           - label: Productos
-            name: products
+            name: productos
+            widget: object
+            fields:
+              - { label: "Habilitar Productos", name: enable, widget: boolean, required: false, default: true }
+              - { label: "Título", name: title, widget: string }
       - label: Encargos
         name: encargos
-        file: data/encargos.yml
+        file: data/orders.yml
+        media_folder: '../static/images/encargos'
+        public_folder: 'images/encargos'
         fields:
-          - label: Título
-            name: title
+          - label: "Descripción"
+            name: description
+            widget: markdown
+          - label: "Imagen de encargos"
+            name: ordersImage
+            widget: image
+          - label: "Encargos personalizados"
+            name: customOrders
+            widget: object
+            fields:
+              - { label: "Título", name: title, widget: string }
+              - { label: "Descripción", name: description, widget: markdown }
+              - label: "Imágenes"
+                name: images
+                widget: list
+                field: { label: "Imagen", name: image, widget: image }
       - label: Galeria
         name: galeria
         file: data/galeria.yml

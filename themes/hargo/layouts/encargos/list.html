@@ -2,16 +2,45 @@
 
 {{ partial "page-title.html" . }}
 
+{{ with .Site.Data.orders }}
 <section class="section pt-0">
   <div class="container">
     <div class="row">
       <div class="col-12 mb-5">
         <div class="content">
-          {{.Content}}
+          <div class="container">
+            <div class="row">
+                <div class="col">
+                  {{ .description | markdownify }}
+                </div>
+                <div class="col">
+                    <img src="{{ .ordersImage | absURL}}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>{{ .customOrders.title }}</h2>
+                    {{ .customOrders.description | markdownify }}
+                </div>
+            </div>
+            <div class="row">
+                <div class=col>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col text-center px-2">
+                              {{ range .customOrders.images }}
+                              <img class="center-block px-2" src="{{ . | absURL }}">
+                              {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
+{{ end }} 
 {{ end }}

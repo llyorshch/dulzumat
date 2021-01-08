@@ -1,54 +1,52 @@
-############################ banner ##########################
 banner:
-  enable : true
-  title : "Pastelería artesana"
-  content : "Todo recién hecho en nuestro obrador, de forma totalmente artesanal. Abierto desde 1974."
-  image : "/images/foto-fondo-inicio.jpg"
-  # button
+  title: Pastelería artesana
+  content: Todo recién hecho en nuestro obrador, de forma totalmente artesanal.
+    Abierto desde 1974.
   button:
-    enable : true
-    label : "Ver todos los productos"
-    link : "productos"
-
-########################### Campañas #########################
+    label: Ver todos los productos
+    link: /productos
+    enable: true
+  image: images/foto-fondo-inicio.jpg
+  enable: true
 promo:
-  enable : true
-  title : "Troncos de Navidad"
-  content : "Ven a probar nuestros troncos de Navidad. Seis variadades diferentes: 
-  \n- Tronco clásico de trufa (pequeño y grande)
-  \n- Tronco clásico de nata (pequeño y grande)
-  \n- Tronco de mousse de chocolate con crujiente de chocolate blanco y gelificado de chocolate
-  \n- Tronco de mousse de turrón con turrón de yema, crujiente y bizcocho de chocolate.
-\n\nTambién puedes llamarnos y los llevamos donde nos indiques."
-  type: image # options: image and video
-  videoThumb : "images/campaign/sandonis.jpg"
-  videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
-  image: "images/campaign/tronco_navidad_crujiente.jpg"
-  link: "/encargos"
+  title: Troncos de Navidad
+  content: >-
+    Ven a probar nuestros troncos de Navidad. Seis variadades diferentes:
 
-######################## Video ##########################
+
+    * Tronco clásico de trufa (pequeño y grande)
+
+    * Tronco clásico de nata (pequeño y grande)
+
+    * Tronco de mousse de chocolate con crujiente de chocolate blanco y gelificado de chocolate
+
+    * Tronco de mousse de turrón con turrón de yema, crujiente y bizcocho de chocolate.
+
+
+    También puedes llamarnos y los llevamos donde nos indiques.
+  type: image
+  videoURL: https://www.youtube.com/embed/n4_XRKX-Zpg
+  link: /encargos
+  videoThumb: images/sandonis.jpg
+  image: images/tronco_navidad_crujiente.jpg
+  enable: true
 video:
-  enable : true
-  title : "Unas recetas que no se pueden dejar pasar"
-  content : "Todo recién hecho en nuestro obrador, de forma totalmente artesanal, con la tradición que respalda nuestro trabajo."
-  videoThumb : "/images/dulzumat-video-thumb.jpg"
-  videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
-  
-
-###################### Call to action ########################
+  title: Unas recetas que no se pueden dejar pasar
+  content: Todo recién hecho en nuestro obrador, de forma totalmente artesanal,
+    con la tradición que respalda nuestro trabajo.
+  videoURL: https://www.youtube.com/embed/n4_XRKX-Zpg
+  videoThumb: images/dulzumat-video-thumb.jpg
+  enable: true
 cta:
-  enable : true
-  title : "Encargos"
-  content : "Puedes hacer tus pedidos por teléfono y recoger tu encargo en una de nuestras tiendas, o te lo llevamos donde nos indiques."
-  image : "/images/banner-encargos.png"
-  overlayImage : "/images/banner-encargos-fondo.png"
+  title: Encargos
+  content: Puedes hacer tus pedidos por teléfono y recoger tu encargo en una de
+    nuestras tiendas, o te lo llevamos donde nos indiques.
   button:
-    label : "Ir a la página de encargos"
-    link : "/encargos"
-
-######################## Productos #############################
+    label: Ir a la página de encargos
+    link: /encargos
+  image: images/banner-encargos.png
+  overlayImage: images/banner-encargos-fondo.png
+  enable: true
 productos:
-  enable : true
-  title : "Nuestras especialidades"
-  # product item comes from "content/productos"
-
+  title: Nuestras especialidades
+  enable: true
