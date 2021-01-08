@@ -9,20 +9,31 @@ banner:
     enable : true
     label : "Ver todos los productos"
     link : "productos"
-  # demo video
-  video:
-    enable : false
-    videoURL : "https://www.youtube.com/embed/wf4F2-9UXUo"
 
-########################## About ##############################
-about:
-  enable : false
-  title : "About Our Product"
-  content : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-          clita kasd gubergren,"
-  image : "images/about.png"
+########################### Campañas #########################
+promo:
+  enable : true
+  title : "Troncos de Navidad"
+  content : "Ven a probar nuestros troncos de Navidad. Seis variadades diferentes: 
+  \n- Tronco clásico de trufa (pequeño y grande)
+  \n- Tronco clásico de nata (pequeño y grande)
+  \n- Tronco de mousse de chocolate con crujiente de chocolate blanco y gelificado de chocolate
+  \n- Tronco de mousse de turrón con turrón de yema, crujiente y bizcocho de chocolate.
+\n\nTambién puedes llamarnos y los llevamos donde nos indiques."
+  type: image # options: image and video
+  videoThumb : "images/campaign/sandonis.jpg"
+  videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
+  image: "images/campaign/tronco_navidad_crujiente.jpg"
+  link: "/encargos"
 
+######################## Video ##########################
+video:
+  enable : true
+  title : "Unas recetas que no se pueden dejar pasar"
+  content : "Todo recién hecho en nuestro obrador, de forma totalmente artesanal, con la tradición que respalda nuestro trabajo."
+  videoThumb : "/images/dulzumat-video-thumb.jpg"
+  videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
+  
 
 ###################### Call to action ########################
 cta:
@@ -35,97 +46,9 @@ cta:
     label : "Ir a la página de encargos"
     link : "/encargos"
 
-######################## raw material #######################
-material:
-  enable : false
-  title : "Ingredientes de nuestros productos"
-  subtitle : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dol."
-  materialItem:
-    # material item loop
-    - title : "Matcha Seeds"
-      image : "images/material/material-1.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-      
-    # material item loop
-    - title : "Aloe Vera"
-      image : "images/material/material-2.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-      
-    # material item loop
-    - title : "Turmeric"
-      image : "images/material/material-3.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-      
-    # material item loop
-    - title : "Tulshi leaf"
-      image : "images/material/material-4.png"
-      content : "Lorem ipsum dolor sit amet,be consetetur sadipscing elitr, sed diam nonumy eirmod tem"
-
-########################### Advantage #########################
-promo:
-  enable : false
-  title : "Troncos de Navidad"
-  content : "Ven a probar nuestros troncos de Navidad. Seis variadades diferentes: 
-  \n- Tronco clásico de trufa (pequeño y grande)
-  \n- Tronco clásico de nata (pequeño y grande)
-  \n- Tronco de mousse de chocolate con crujiente de chocolate blanco y gelificado de chocolate
-  \n- Tronco de mousse de turrón con turrón de yema, crujiente y bizcocho de chocolate.
-\n\nTambién puedes llamarnos y los llevamos donde nos indiques."
-  # videoThumb : "images/campaign/sandonis.jpg"
-  # videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
-  image: "images/campaign/tronco_navidad_crujiente.jpg"
-  link: "/encargos"
-
-
-######################## Promo Video ##########################
-video:
-  enable : true
-  title : "Unas recetas que no se pueden dejar pasar"
-  content : "Todo recién hecho en nuestro obrador, de forma totalmente artesanal, con la tradición que respalda nuestro trabajo."
-  videoThumb : "/images/dulzumat-video-thumb.jpg"
-  videoURL : "https://www.youtube.com/embed/n4_XRKX-Zpg"
-  
-
-
 ######################## Productos #############################
 productos:
   enable : true
   title : "Nuestras especialidades"
   # product item comes from "content/productos"
-
-
-########################## Testimonial ########################
-testimonial:
-  enable : false
-  title : "What People Are Saying <br> About Our Product"
-  testimonialItem:
-    # testimonial item loop
-    - name : "Angelo Perara"
-      image : "images/clients/client-1.jpg" # size 100px*100px
-      designation : "CEO, Dialogue Broad Band"
-      content : "Lorem ipsum dolor sit amet, <br> consetetur sadipscing elitr, diam <br> nonumy eirmod tempor"
-      rating : "five" # rating star, one to five
-      
-    # testimonial item loop
-    - name : "Riya Ventila"
-      image : "images/clients/client-2.jpg" # size 100px*100px
-      designation : "CEO, Dialogue Broad Band"
-      content : "Lorem ipsum dolor sit amet, <br> consetetur sadipscing elitr, diam <br> nonumy eirmod tempor"
-      rating : "three" # rating star, one to five
-      
-    # testimonial item loop
-    - name : "john Doe"
-      image : "images/clients/client-3.jpg" # size 100px*100px
-      designation : "CEO, Dialogue Broad Band"
-      content : "Lorem ipsum dolor sit amet, <br> consetetur sadipscing elitr, diam <br> nonumy eirmod tempor"
-      rating : "five" # rating star, one to five
-      
-    # testimonial item loop
-    - name : "Riya Ventila"
-      image : "images/clients/client-2.jpg" # size 100px*100px
-      designation : "CEO, Dialogue Broad Band"
-      content : "Lorem ipsum dolor sit amet, <br> consetetur sadipscing elitr, diam <br> nonumy eirmod tempor"
-      rating : "four" # rating star, one to five
-
 

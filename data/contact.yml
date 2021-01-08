@@ -1,31 +1,24 @@
 ############################# contact info ################
-contact:
-  enable : true
-  # office
-  office:
-    pastelerias:
-    - pasteleria: " En la zona sur de Valencia, cerca de la Ciutat de les Arts i les Ciències"
-      direccion:
-      - direccionLine : "Avenida de la Plata 83"
-      - direccionLine : "49006 Valencia"
-      - direccionLine : "96 333 09 46"
-      horario:
-      - horarioLine : "De lunes a sábado:"
-      - horarioLine : "de 7:00 a 21:00"
-      - horarioLine : "Domingos y festivos:"
-      - horarioLine : "de 9:00 a 21:00"
-      mapRef : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.5358964317425!2d-0.36335864157329506!3d39.457220560866865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048c4f7be969f%3A0xbc6288d288dcdefb!2sDulzumat!5e0!3m2!1sen!2ses!4v1600035206418!5m2!1sen!2ses"
-    - pasteleria: "En la zona norte de Valencia, junto a la estación de autobuses"
-      direccion:
-      - direccionLine : "Avenida de Menéndez Pidal 8"
-      - direccionLine : "46009 Valencia"
-      - direccionLine : "96 340 26 20"
-      horario:
-      - horarioLine : "De lunes a domingo:"
-      - horarioLine : "de 7:00 a 22:00"
-      mapRef : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.4755211866886!2d-0.3880302847030872!3d39.48117587948488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f598e41383d%3A0xf843ed759cd7f943!2sDulzumat!5e0!3m2!1sen!2ses!4v1600035436011!5m2!1sen!2ses"
-
-
-####################### google map ########################
-map:
-  enable: true
+pastelerias:
+- pasteleria:
+  description : "En la zona sur de Valencia, cerca de la Ciutat de les Arts i les Ciències"
+  direccion:
+  - direccionLine : "Avenida de la Plata 83"
+  - direccionLine : "49006 Valencia"
+  - direccionLine : "96 333 09 46"
+  horario:
+  - horarioLine : "De lunes a sábado:"
+  - horarioLine : "de 7:00 a 21:00"
+  - horarioLine : "Domingos y festivos:"
+  - horarioLine : "de 9:00 a 21:00"
+  mapRef : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.5358964317425!2d-0.36335864157329506!3d39.457220560866865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048c4f7be969f%3A0xbc6288d288dcdefb!2sDulzumat!5e0!3m2!1sen!2ses!4v1600035206418!5m2!1sen!2ses"
+- pasteleria:
+  description : "En la zona norte de Valencia, junto a la estación de autobuses"
+  direccion:
+  - direccionLine : "Avenida de Menéndez Pidal 8"
+  - direccionLine : "46009 Valencia"
+  - direccionLine : "96 340 26 20"
+  horario:
+  - horarioLine : "De lunes a domingo:"
+  - horarioLine : "de 7:00 a 22:00"
+  mapRef : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.4755211866886!2d-0.3880302847030872!3d39.48117587948488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f598e41383d%3A0xf843ed759cd7f943!2sDulzumat!5e0!3m2!1sen!2ses!4v1600035436011!5m2!1sen!2ses"

@@ -4,9 +4,71 @@ backend:
 media_folder: static/images/uploads
 public_folder: images/uploads
 publish_mode: editorial_workflow
-# when using the default proxy server port
-# local_backend: true
+# Enable the local backend just when you run the Netlify CMS app in a localhost environment
+local_backend: true
 collections:
+  - label: "Páginas"
+    name: "pages"
+    preview: false
+    files:
+      - label: "Página principal"
+        name: "home"
+        file: "data/homepage.yml"
+        fields:
+          - label: Banner
+            name: banner
+            widget: object
+            fields:
+              - { label: "Banner habilitado", name: enable, widget: boolean }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Descripción", name: content, widget: string }
+              - { label: "Imágen", name: image, widget: image }
+              - label : "Botón"
+                name: button
+                widget: object
+                fields:
+                - { label: "Botón habilitado", name: enable, widget: boolean }
+                - { label: "Etiqueta", name: label, widget: string }
+                - { label: "Enlace", name: link, widget: string }
+          - label: Campañas
+            name: promo
+            widget: object
+            fields:
+            - { label: "Habilitar campaña", name: enable, widget: boolean }
+            - { label: "Título", name: title, widget: string }
+            - { label: "Contenido", name: content, widget: markdown }
+            - { label: "Tipo de contenido multimedia", name: type, widget: select, options: ['image','video'], default: 'image' }
+            - { label: "Video thumbnail", name: videoThumb, widget: image }
+            - { label: "Video URL", name: videoURL, widget: string }
+            - { label: "Imágen", name: image, widget: image }
+            - { label: "Link de la imagen", name: link, widget: string }
+          - label: Video
+            name: video
+          - label: Call to Action
+            name: cta
+          - label: Productos
+            name: products
+      - label: Encargos
+        name: encargos
+        file: data/encargos.yml
+        fields:
+          - label: Título
+            name: title
+      - label: Galeria
+        name: galeria
+        file: data/galeria.yml
+        fields:
+          - label: Título
+            name: title}
+      - label: "Contacto"
+        name: "contact"
+        file: "data/contact.yml"
+        fields:
+          - label: Pastelerías
+            name: pastelerias
+            widget: list
+            fields:
+              - {label: Descripción, name: description, widget: string}
   - name: 'pasteles'
     label: 'Productos - Pasteles'
     folder: 'content/productos/pasteles'
