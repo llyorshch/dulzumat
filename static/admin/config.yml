@@ -6,7 +6,7 @@ public_folder: images/uploads
 publish_mode: editorial_workflow
 # Enable the local backend when you run the Netlify CMS app
 # in a localhost environment with `npx netlify-cms-proxy-server`
-local_backend: true
+# local_backend: true
 collections:
   - label: "Páginas"
     name: "pages"
@@ -97,12 +97,6 @@ collections:
                 name: images
                 widget: list
                 field: { label: "Imagen", name: image, widget: image }
-      - label: Galeria
-        name: galeria
-        file: data/galeria.yml
-        fields:
-          - label: Título
-            name: title}
       - label: "Contacto"
         name: "contact"
         file: "data/contact.yml"
@@ -111,7 +105,10 @@ collections:
             name: pastelerias
             widget: list
             fields:
-              - {label: Descripción, name: description, widget: string}
+              - { label: Descripción, name: description, widget: string }
+              - { label: Dirección, name: direccion, widget: markdown }
+              - { label: Horario, name: horario, widget: markdown }
+              - { label: "URL de mapa", name: mapRef, widget: string }
   - name: 'pasteles'
     label: 'Productos - Pasteles'
     folder: 'content/productos/pasteles'
