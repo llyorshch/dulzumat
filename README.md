@@ -28,9 +28,9 @@ La [configuración de Netlify](https://app.netlify.com/sites/clever-pare-22cc01/
 
 Este repositorio tiene configurada [una acción de Github](https://github.com/llyorshch/dulzumat/actions?query=workflow%3ACI) para construir el sitio y subirlo al FTP del hosting desde el que se sirve el dominio <https://www.dulzumat.com>.
 
-Para lanzar [la acción](https://github.com/llyorshch/dulzumat/actions?query=workflow%3ACI) sólo hay que ejecutarla con el botón `Run workflow` sobre la rama `master`. 
+Para lanzar [la acción](https://github.com/llyorshch/dulzumat/actions?query=workflow%3ACI) sólo hay que ejecutarla con el botón `Run workflow` sobre la rama `master`.
 
 ## Personalización del tema
 
 - Carpeta de imágenes: static/images
-- Carpeta de estilos: themes/hargo/assets/scss
+- Carpeta de estilos: themes/hargo/assets/scs
