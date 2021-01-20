@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Bracito nata/trufa.
+title: Bracito nata/trufa
 date: 2020-10-04T11:40:27+02:00
 price: 1,65 €
 weight: 100
