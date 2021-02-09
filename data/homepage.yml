@@ -14,7 +14,7 @@ promo:
   type: video
   videoURL: https://www.youtube.com/embed/h8xBcYDsSlk
   link: /encargos
-  videoThumb: images/previewsanvalentín.png
+  videoThumb: images/previewsanvalentin.png
   image: images/tronco_navidad_crujiente.jpg
   enable: true
 video:
