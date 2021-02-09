@@ -24,12 +24,12 @@ promo:
 
 
     También puedes llamarnos y los llevamos donde nos indiques.
-  type: image
-  videoURL: https://www.youtube.com/embed/n4_XRKX-Zpg
+  type: video
+  videoURL: https://www.youtube.com/embed/h8xBcYDsSlk
   link: /encargos
-  videoThumb: images/sandonis.jpg
+  videoThumb: images/previewsanvalentín.png
   image: images/tronco_navidad_crujiente.jpg
-  enable: false
+  enable: true
 video:
   title: Unas recetas que no se pueden dejar pasar
   content: Todo recién hecho en nuestro obrador, de forma totalmente artesanal,
