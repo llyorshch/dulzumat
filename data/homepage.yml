@@ -9,25 +9,12 @@ banner:
   image: images/foto-fondo-inicio.jpg
   enable: true
 promo:
-  title: Troncos de Navidad
-  content: >-
-    Ven a probar nuestros troncos de Navidad. Seis variadades diferentes:
-
-
-    * Tronco clásico de trufa (pequeño y grande)
-
-    * Tronco clásico de nata (pequeño y grande)
-
-    * Tronco de mousse de chocolate con crujiente de chocolate blanco y gelificado de chocolate
-
-    * Tronco de mousse de turrón con turrón de yema, crujiente y bizcocho de chocolate.
-
-
-    También puedes llamarnos y los llevamos donde nos indiques.
+  title: San Valentín
+  content: Nuestros corazones de San Valentín. Irresistibles.
   type: video
   videoURL: https://www.youtube.com/embed/h8xBcYDsSlk
   link: /encargos
-  videoThumb: images/previewsanvalentín.png
+  videoThumb: images/previewsanvalentin.png
   image: images/tronco_navidad_crujiente.jpg
   enable: true
 video:
