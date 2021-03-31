@@ -9,14 +9,15 @@ banner:
   image: images/foto-fondo-inicio.jpg
   enable: true
 promo:
-  title: San Valentín
-  content: Nuestros corazones de San Valentín. Irresistibles.
-  type: video
+  title: Dulces de Pascua
+  content: Ven a por nuestras monas de pascua, panquemaos y tortas de nueces y
+    pasas. Las mejores de Valencia!
+  type: image
   videoURL: https://www.youtube.com/embed/h8xBcYDsSlk
   link: /encargos
-  videoThumb: images/previewsanvalentin.png
+  videoThumb: images/dsc04408.jpg
   image: images/tronco_navidad_crujiente.jpg
-  enable: false
+  enable: true
 video:
   title: Unas recetas que no se pueden dejar pasar
   content: Todo recién hecho en nuestro obrador, de forma totalmente artesanal,
