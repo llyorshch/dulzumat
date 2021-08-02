@@ -2,7 +2,7 @@
 draft: false
 title: Barca nata/nuez
 date: 2020-10-04T11:40:01+02:00
-price: 1,90 €
+price: 2,00 €
 weight: 400
 images:
   - images/products/pasteles-barca-nata-nuez.jpg

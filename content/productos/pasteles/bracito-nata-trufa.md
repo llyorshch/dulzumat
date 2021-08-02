@@ -2,7 +2,7 @@
 draft: false
 title: Bracito nata/trufa
 date: 2020-10-04T11:40:27+02:00
-price: 1,65 €
+price: 1,80 €
 weight: 100
 images:
   - images/products/pasteles-bracito-nata-trufa.jpg
