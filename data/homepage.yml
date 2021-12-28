@@ -9,15 +9,22 @@ banner:
   image: images/foto-fondo-inicio.jpg
   enable: true
 promo:
-  title: Dulces de Pascua
-  content: Ven a por nuestras monas de pascua, panquemaos y tortas de nueces y
-    pasas. Las mejores de Valencia!
+  title: Panettones todo el año
+  content: |-
+    Prueba nuestros panettones:
+
+    * Chocolate negro y con leche
+    * Caramelo y chocolate blanco
+    * Naranja confitada y chocolate
+    * Frutas confitadas y pasas al ron
+
+    A la venta todo el año!
   type: image
   videoURL: https://www.youtube.com/embed/h8xBcYDsSlk
   link: /encargos
   videoThumb: images/dsc04408.jpg
-  image: images/mona_de_pascua.jpg
-  enable: false
+  image: images/panetone_black_bg.png
+  enable: true
 video:
   title: Unas recetas que no se pueden dejar pasar
   content: Todo recién hecho en nuestro obrador, de forma totalmente artesanal,
