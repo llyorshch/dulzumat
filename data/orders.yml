@@ -1,16 +1,6 @@
-description: >-
-  Por favor, haz tus pedidos solo por vía telefónica.  
-
-  Puedes pasar a recoger tu encargo por una de nuestras tiendas, o te lo llevamos donde nos indiques.
-
-
-  Portes:
-
-  - Valencia ciudad  6 €
-
-  - Valencia área metropolitana  7 €
-
-  - Resto: consultar.
+description: |-
+  Por favor, haz tus pedidos solo por vía telefónica.\
+  Puedes pasar a recoger tu encargo por una de nuestras tiendas.
 ordersImage: images/encargos/encargos.jpg
 customOrders:
   title: Peticiones de tartas con diseño personalizado
