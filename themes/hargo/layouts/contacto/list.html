@@ -20,13 +20,19 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-4 mb-1 mx-3">
+              <div class="col-sm-3 mb-1 mx-3">
                   {{ .direccion | markdownify }}
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-3">
                 <h4>Horario de apertura:</h4>
                 <div class="mb-1 mx-3">
                   {{ .horario | markdownify }}
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <h4>Horario en agosto:</h4>
+                <div class="mb-1 mx-3">
+                  {{ .horarioAgosto | markdownify }}
                 </div>
               </div>
             </div>
