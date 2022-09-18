@@ -1,7 +1,7 @@
 ---
 title: Bollería surtida
 date: 2020-10-04T10:59:58.119+02
-price: 12 €/kg
+price: 13 €/kg
 clarification: 1 kg, 35 piezas aprox.
 weight: 1000
 images:
