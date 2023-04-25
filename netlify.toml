@@ -1,21 +1,20 @@
 [build]
 publish = "public"
-command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --gc --minify -b $GE_ORG_ES_URL"
 
 [context.production.environment]
 HUGO_VERSION = "0.79.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-NETLIFY_RESERVED__DEPLOY_PRIME_URL = "https://dulzumat.ge.org.es"
 
 [context.staging]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL -e staging"
+command = "hugo --gc --minify --buildFuture -b $GE_ORG_ES_URL -e staging"
 
 [context.staging.environment]
 HUGO_VERSION = "0.79.0"
 
 [context.branch-deploy]
-command = "hugo --gc --minify -b $NETLIFY_RESERVED__DEPLOY_PRIME_URL"
+command = "hugo --gc --minify -b $GE_ORG_ES_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.69.2"
