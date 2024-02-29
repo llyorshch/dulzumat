@@ -2,7 +2,7 @@
 draft: false
 title: Barca de avellana
 date: 2020-10-04T11:25:18+02:00
-price: 2,20 €
+price: 2,30 €
 weight: 500
 images:
   - images/products/pasteles-barca-de-avellana.jpg

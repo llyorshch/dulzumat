@@ -2,7 +2,7 @@
 title: "Tiramisú"
 date: 2020-10-04T11:46:58+02:00
 draft: false
-price: 2,20 €
+price: 2,30 €
 allergens: 1,3,7
 preview: images/products/pasteles-tiramisu-thumb.jpg
 images:

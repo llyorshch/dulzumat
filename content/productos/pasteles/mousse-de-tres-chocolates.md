@@ -2,7 +2,7 @@
 title: "Mousse de tres chocolates"
 date: 2020-10-04T11:45:32+02:00
 draft: false
-price: 2,20 €
+price: 2,30 €
 allergens: 1,3,7
 preview: images/products/pasteles-mousse-de-tres-chocolates-thumb.jpg
 images:

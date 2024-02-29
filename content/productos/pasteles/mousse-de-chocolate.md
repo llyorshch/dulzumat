@@ -2,7 +2,7 @@
 draft: false
 title: Mousse de chocolate
 date: 2020-10-04T11:43:54+02:00
-price: 2,20 €
+price: 2,30 €
 weight: 2000
 images:
   - images/products/pasteles-mousse-de-chocolate.jpg

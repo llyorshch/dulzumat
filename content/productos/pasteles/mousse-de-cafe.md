@@ -2,7 +2,7 @@
 title: "Mousse de cafe"
 date: 2020-10-04T11:42:23+02:00
 draft: false
-price: 2,20 €
+price: 2,30 €
 allergens: 1,3,7
 preview: images/products/pasteles-mousse-de-cafe-thumb.jpg
 images:

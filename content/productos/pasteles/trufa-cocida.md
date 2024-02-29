@@ -2,7 +2,7 @@
 title: "Trufa cocida"
 date: 2020-10-04T11:47:09+02:00
 draft: false
-price: 2 €
+price: 2,30 €
 allergens: 1,3,7
 preview: images/products/pasteles-trufa-cocida-thumb.jpg
 images:

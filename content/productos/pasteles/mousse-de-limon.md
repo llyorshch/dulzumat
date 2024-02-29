@@ -2,7 +2,7 @@
 title: "Mousse de limon"
 date: 2020-10-04T11:44:31+02:00
 draft: false
-price: 2,20 €
+price: 2,30 €
 allergens: 1,3,7
 preview: images/products/pasteles-mousse-de-limon-thumb.jpg
 images:
