@@ -2,7 +2,7 @@
 draft: false
 title: Mousse de chocolate
 date: 2020-10-04T18:07:14+02:00
-price: 23 €/kg
+price: 25 €/kg
 weight: 1100
 images:
   - images/products/tartas-mousse-de-chocolate.jpg
