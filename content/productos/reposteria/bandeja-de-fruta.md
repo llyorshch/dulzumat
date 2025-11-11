@@ -2,7 +2,7 @@
 draft: false
 title: Banda de fruta
 date: 2020-10-04T12:44:26+02:00
-price: 14 €/ud.
+price: 15 €/ud.
 weight: 1300
 images:
   - images/products/reposteria-bandeja-de-fruta.jpg

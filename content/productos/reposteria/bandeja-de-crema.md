@@ -2,7 +2,7 @@
 draft: false
 title: Banda de crema
 date: 2020-10-04T12:44:30+02:00
-price: 14 €/ud.
+price: 15 €/ud.
 weight: 1400
 images:
   - images/products/reposteria-bandeja-de-crema.jpg

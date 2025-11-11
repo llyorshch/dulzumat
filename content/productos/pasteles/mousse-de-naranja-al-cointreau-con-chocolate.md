@@ -2,7 +2,7 @@
 title: "Mousse de naranja al Cointreau con chocolate"
 date: 2020-10-04T11:44:54+02:00
 draft: false
-price: 2,30 €
+price: 2,60 €
 allergens: 1,3,7
 preview: images/products/pasteles-mousse-de-naranja-al-cointreau-con-chocolate-thumb.jpg
 images:
