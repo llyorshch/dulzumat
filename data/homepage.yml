@@ -24,7 +24,7 @@ promo:
   link: /encargos
   videoThumb: images/dsc04408.jpg
   image: images/panetone_black_bg.png
-  enable: true
+  enable: false
 video:
   title: Unas recetas que no se pueden dejar pasar
   content: Todo recién hecho en nuestro obrador, de forma totalmente artesanal,
