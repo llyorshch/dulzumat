@@ -77,8 +77,8 @@ disqusShortname = ""
 
 #################### default parameters ################################
 [params]
-logo = "/images/dulzumat-logo-cabecera.png"
-logoFooter = "/images/dulzumat-logo-pie-de-pagina.png"
+logo = "images/dulzumat-logo-cabecera.png"
+logoFooter = "images/dulzumat-logo-pie-de-pagina.png"
 home = "Inicio"
 # Meta data
 description = "Dulzumat. Pastelería artesana en Valencia desde 1974. Todo recién hecho en nuestro obrador, de forma totalmente artesanal."

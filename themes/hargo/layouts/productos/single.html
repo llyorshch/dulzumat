@@ -38,7 +38,7 @@
                 <div class="container">
                   <div class="row">
                       <div class="col">
-                        <img class="img-fluid" src="/images/allergens/alergenos-{{ . }}.png" >
+                        <img class="img-fluid" src="{{ printf "images/allergens/alergenos-%s.png" . | absURL }}" >
                       </div>
                   </div>
                   <div class="row">
