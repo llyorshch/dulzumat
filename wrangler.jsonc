@@ -9,7 +9,7 @@
     "directory": "public"
   },
   "build": {
-      "command": "hugo --gc --minify --buildFuture -b https://dulzumat.jorge-cae.workers.dev"
+      "command": "hugo --gc --minify --buildFuture -b https://dulzumat.dpdns.org"
     },
   "compatibility_flags": [
     "nodejs_compat"
