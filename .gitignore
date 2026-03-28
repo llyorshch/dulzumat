@@ -1,5 +1,6 @@
 .vscode/
 public/
+resources/_gen/
 .DS_Store
 
 # wrangler files

@@ -62,6 +62,63 @@ Netlify CMS at `/admin` (configured in `static/admin/config.yml`). Manages:
 - Contact info via `data/contact.yml`
 - Products in each category folder under `content/productos/`
 
+## Product Thumbnails
+
+All product thumbnails (`preview` field) must match these specs — verified against the full Pasteles category:
+
+| Property | Value |
+|---|---|
+| Dimensions | 620 × 620 px |
+| Aspect ratio | 1:1 (square) |
+| Format | JPEG |
+| File size | ~60–150 KB |
+| Margin | ~20px white space around the subject |
+
+### Consistency rule: thumbnail and main image must match
+
+The white border around the subject must be **identical** in both the thumbnail (shown in the category listing) and the main image (shown in the product detail page). Use the **same canvas crop** for both — only the output resolution differs:
+
+| File | Output size |
+|---|---|
+| `<name>-thumb.jpg` | 620 × 620 px |
+| `<name>.jpg` (main) | 1200 × 1200 px |
+
+Both are generated from the same square canvas (e.g. 1128 px) centered on the subject centroid, then resized to their respective output sizes.
+
+### Generating a thumbnail from a camera photo
+
+Use `scripts/make-thumbnail.py` (requires Pillow: `pip install Pillow`):
+
+```bash
+python3 scripts/make-thumbnail.py <source_photo> static/images/products/<name>-thumb.jpg
+```
+
+**Key learnings baked into the script:**
+
+- **Background detection**: camera photos have a near-white background (~RGB 231,231,233), not pure white. The script samples the four corners to detect it automatically.
+- **Use centroid, not bounding box center**: the bounding box center is skewed by shadows and asymmetric edges. The centroid of the subject mask gives the true visual center.
+- **Fill out-of-bounds with background colour**: when the square crop extends beyond the original frame, fill with the detected background colour (not white) to avoid visible seams.
+- **Consistent threshold**: `diff > 20` per channel reliably isolates the pastry body without picking up faint shadows (`diff > 15`) or missing soft edges (`diff > 25`).
+
+### Matching zoom across thumbnails
+
+The script derives canvas size from the subject's bounding box width (`sw`). This works well for products with contained toppings, but **fails when decorations extend far from the body** (e.g. chocolate drizzle drips reaching the frame edges). In those cases `sw` is inflated and the subject appears too small.
+
+**Rule**: when a new thumbnail looks under-zoomed compared to its category neighbours, hardcode the canvas size to match a reference thumbnail from the same category instead of relying on `sw`:
+
+```python
+# Match zoom of an existing thumbnail (e.g. pasteles-barca-de-avellana-thumb.jpg = 1128px canvas)
+canvas_side = 1128   # override auto-sizing
+```
+
+**Reference canvas sizes (Pasteles category):**
+| Reference product | Canvas size |
+|---|---|
+| Barca de avellana | 1128 px |
+| Barca nata/nuez | 1128 px (matched to avellana) |
+
+When adding a new pasteles thumbnail, compare visually with neighbours and adjust canvas size until the zoom feels consistent. Add the value to the table above.
+
 ## Deployment
 
 **Staging** (automatic): Any push to `master` triggers Netlify to rebuild and deploy.
