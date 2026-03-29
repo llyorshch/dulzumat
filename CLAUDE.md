@@ -116,6 +116,7 @@ canvas_side = 1128   # override auto-sizing
 |---|---|
 | Barca de avellana | 1128 px |
 | Barca nata/nuez | 1128 px (matched to avellana) |
+| Bracito nata/trufa | 1128 px (matched to avellana) |
 
 When adding a new pasteles thumbnail, compare visually with neighbours and adjust canvas size until the zoom feels consistent. Add the value to the table above.
 
