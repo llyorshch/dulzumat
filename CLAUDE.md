@@ -62,6 +62,39 @@ Netlify CMS at `/admin` (configured in `static/admin/config.yml`). Manages:
 - Contact info via `data/contact.yml`
 - Products in each category folder under `content/productos/`
 
+### Template Routing
+
+- `themes/hargo/layouts/baseof.html` is the site shell. It includes the shared head, header, footer, and a `main` block filled by each page template.
+- `themes/hargo/layouts/index.html` renders the homepage from `data/homepage.yml`. Most homepage sections are toggled purely by `enable` booleans in that data file.
+- `themes/hargo/layouts/productos/list.html` renders product category landing pages such as `/productos/pasteles/`. It loops over `.Data.Pages` and shows either `preview` or the first image.
+- `themes/hargo/layouts/productos/single.html` renders individual product pages. It expects front matter fields like `images`, `price`, `clarification`, and `allergens`.
+- `themes/hargo/layouts/contacto/list.html` renders the contact page from `data/contact.yml`.
+- `themes/hargo/layouts/encargos/list.html` renders the custom orders page from `data/orders.yml`.
+- `themes/hargo/layouts/galeria/list.html` renders the gallery page body; the actual gallery content comes from shortcodes in `content/galeria/_index.md`.
+
+### Representative Content Model
+
+- Section pages such as `content/productos/pasteles/_index.md` define the title, ordering, and category hero image for each product category.
+- Individual products are almost entirely front matter driven. Many product files have no markdown body at all; if a body is added, `layouts/productos/single.html` shows it under the "Descripcion" tab.
+- The top-level `content/productos/_index.md` provides the intro content for the products landing page, and child section pages become the category cards.
+- The gallery page is maintained by adding/removing images under `static/images/galeria/`; editors do not need to change template code for gallery updates.
+
+### Styling & Frontend Behavior
+
+- Main SCSS entrypoint: `themes/hargo/assets/scss/style.scss`.
+- Dulzumat-specific visual overrides live in `themes/hargo/assets/scss/_dulzumat.scss`; most of the remaining SCSS comes from the Hargo theme.
+- Main JS entrypoint: `themes/hargo/assets/js/script.js`. It handles the preloader, sticky nav styling, video modal behavior, Slick sliders, and accordion icon toggling.
+- PhotoSwipe gallery behavior is loaded from `static/js/load-photoswipe.js`, but only when the `load-photoswipe` shortcode is used on a page.
+
+### Operational Notes / Gotchas
+
+- This repo is content-heavy and logic-light. Most changes should be made in `content/`, `data/`, `static/images/`, or a small number of templates rather than by introducing new code.
+- `config.toml` still contains legacy theme features that are currently disabled or unused, including Snipcart, rating widgets, and generic blog-style list/single templates.
+- The homepage "Nuestras especialidades" section in `layouts/index.html` currently ranges over pages with `Type == "especialidad"`. There are no such pages in the repository now, so this section renders only its heading unless matching content is added or the template is changed.
+- Footer contact details are duplicated: store addresses/phones exist both in `config.toml` and, in richer form, in `data/contact.yml`. The footer uses `config.toml`; the contact page uses `data/contact.yml`.
+- `themes/hargo/layouts/_partials/head.html` and `_partials/footer.html` include several third-party assets directly from CDNs or external services, including Netlify Identity, Google Maps, Snipcart, and PhotoSwipe.
+- `netlify.toml` builds the canonical staging deployment from Hugo. `wrangler.jsonc` is also configured to build/publish the generated `public/` directory, so deployment assumptions should be checked before changing hosting behavior.
+
 ## Product Thumbnails
 
 All product thumbnails (`preview` field) must match these specs — verified against the full Pasteles category:
