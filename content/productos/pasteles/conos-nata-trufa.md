@@ -1,5 +1,5 @@
 ---
-title: "Conos nata/trufa"
+title: "Conos nata o trufa"
 date: 2020-10-04T11:41:00+02:00
 draft: false
 price: 2,40 €

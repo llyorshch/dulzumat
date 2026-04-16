@@ -1,6 +1,6 @@
 ---
 draft: false
-title: Barca nata/nuez
+title: Barca nata y nuez
 date: 2020-10-04T11:40:01+02:00
 price: 2,40 €
 weight: 400
