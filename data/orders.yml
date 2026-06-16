@@ -1,6 +1,6 @@
 description: |-
   Por favor, haz tus pedidos solo por vía telefónica.\
-  Puedes pasar a recoger tu encargo por una de nuestras tiendas.
+  Puedes pasar a recoger tu encargo en la misma tienda donde lo hayas realizado.
 ordersImage: images/encargos/encargos.jpg
 customOrders:
   title: Peticiones de tartas con diseño personalizado
