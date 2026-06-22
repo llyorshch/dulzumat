@@ -94,7 +94,7 @@
 </script>
 
 {{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/script.js" | minify}}
+{{ $script := resources.Get "js/script.js" | minify | fingerprint }}
 <script src="{{ $script.Permalink }}"></script>
 
 
