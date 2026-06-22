@@ -34,8 +34,8 @@ video:
   enable: true
 cta:
   title: Encargos
-  content: Puedes hacer tus pedidos por teléfono y recoger tu encargo en una de
-    nuestras tiendas.
+  content: Por favor, haz tus pedidos solo por vía telefónica. Puedes pasar a
+    recoger tu encargo en la misma tienda donde lo hayas realizado.
   button:
     label: Ir a la página de encargos
     link: /encargos
