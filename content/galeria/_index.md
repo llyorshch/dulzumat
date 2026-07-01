@@ -5,4 +5,4 @@ draft: false
 description : "Galería de imágenes"
 ---
 {{< load-photoswipe >}}
-{{< gallery dir="/images/galeria/" caption-position="none">}}
+{{< gallery dir="/images/galeria/" caption-position="none"/>}}

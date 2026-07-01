@@ -1,0 +1,144 @@
+######################## default configuration ####################
+baseURL = "https://www.dulzumat.com/"
+languageCode = "en-us"
+title = "Dulzumat"
+theme = "hargo"
+summaryLength = "20"
+disqusShortname = ""
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  link = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  link = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  link = "plugins/themify-icons/themify-icons.css"
+  [[params.plugins.css]]
+  link = "plugins/kaufmannbt-bold-webfont/kaufmannbt-bold.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  link = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  link = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  link = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  link = "plugins/google-map/gmap.js"
+
+  
+############################## navigation ###############################
+[menu]
+    
+  [[menu.main]]
+  name = "Productos"
+  URL = "productos"
+  weight = 1
+  
+  [[menu.main]]
+  name = "Encargos"
+  URL = "encargos"
+  weight = 2
+
+  [[menu.main]]
+  name = "Galería"
+  URL = "galeria"
+  weight = 3
+
+  [[menu.main]]
+  name = "Contacto"
+  URL = "contacto"
+  weight = 4
+
+  ############# footer menu #############
+  [[menu.footer]]
+  name = "Productos"
+  URL = "productos"
+  weight = 1
+  
+  [[menu.footer]]
+  name = "Encargos"
+  URL = "encargos"
+  weight = 2
+  
+  [[menu.main]]
+  name = "Galería"
+  URL = "galeria"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Contacto"
+  URL = "contacto"
+  weight = 4
+
+
+#################### default parameters ################################
+[params]
+logo = "images/dulzumat-logo-cabecera.png"
+logoFooter = "images/dulzumat-logo-pie-de-pagina.png"
+home = "Inicio"
+# Meta data
+description = "Dulzumat. Pastelería artesana en Valencia desde 1974. Todo recién hecho en nuestro obrador, de forma totalmente artesanal."
+author = "Themefisher"
+# google map
+gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+mapLatitude = "51.5223477"
+mapLongitude = "-0.1622023"
+mapMarker = "images/marker.png"
+# Google Analitycs
+googleAnalitycsID = "" # Your ID
+# Contact Information
+email = "dulzumat@dulzumat.com"
+streetAndNumberLaPlata = "Avenida de la Plata 83"
+zipCodeAndCityLaPlata = "46006 Valencia"
+mobileLaPlata = "963 33 09 46"
+
+streetAndNumberMenendezPidal = "Avenida de Menéndez Pidal 8"
+zipCodeAndCityMenendezPidal = "46009 Valencia"
+mobileMenendezPidal = "963 40 26 20"
+
+# copyright
+copyright = "Copyright &copy; 2021 Dulzumat. Todos los derechos reservados"
+
+  # Preloader
+  [params.preloader]
+  enable = true
+  preloader = "" # use .png , .svg or .gif format
+
+  # Product Rating
+  # it works with https://rating-widget.com/ , you will get the ID and publicKey after creating your account there.
+  [params.rating]
+  enable = false
+  websiteID = "444334"
+  publicKey = "811cf0927332bf51f2e12f84608594ac"
+
+  # Social Site
+  [[params.social]]
+  icon = "ti-facebook"
+  link = "https://es-es.facebook.com/Dulzumat-107103074234058"
+  
+  # [[params.social]]
+  # icon = "ti-twitter-alt"
+  # link = "#"
+  
+  # [[params.social]]
+  # icon = "ti-youtube"
+  # link = "#"
+  
+  [[params.social]]
+  icon = "ti-instagram"
+  link = "https://www.instagram.com/dulzumat/"
+  
+  # [[params.social]]
+  # icon = "ti-pinterest"
+  # link = "#"
+
+  # Contact Form
+  [params.contact]
+  formAction = "#" # contact form works with formspree.io
+
+  # Enable shortcodes
+  enableInlineShortcodes = true

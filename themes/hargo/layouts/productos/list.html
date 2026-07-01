@@ -18,7 +18,7 @@
             <img src="{{ .Params.preview | absURL }}" alt="{{ .Title }}" class="card-img-top">
           {{ else if and (isset .Params "images") (isset .Params.images 0)  }}
             {{ range first 1 .Params.images }}
-            <img src="{{ .image | absURL }}" alt="{{ .Title }}" class="card-img-top">
+            <img src="{{ . | absURL }}" alt="{{ . }}" class="card-img-top">
           {{ end }}
           </a>
           {{ end }}

@@ -1,0 +1,12 @@
+# Reglas de caché para Netlify (staging)
+
+# Por defecto: almacenar en caché pero revalidar siempre.
+# 304 si no cambió (no se descarga); inmediato si cambió.
+/*
+  Cache-Control: no-cache
+
+# CSS y JS llevan hash de contenido (fingerprint de Hugo) → caché larga.
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+/*.js
+  Cache-Control: public, max-age=31536000, immutable

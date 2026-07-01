@@ -1,12 +1,12 @@
 ---
-title: "Bracito nata/trufa"
-date: 2020-10-04T11:40:27+02:00
 draft: false
-price: 1,65 €
-allergens: 1,3,7
-preview: /images/products/pasteles-bracito-nata-trufa-thumb.jpg
-images:
-  - image: /images/products/pasteles-bracito-nata-trufa.jpg
-type: productos
+title: Bracito nata o trufa
+date: 2020-10-04T11:40:27+02:00
+price: 2,40 €
 weight: 100
+images:
+  - images/products/pasteles-bracito-nata-trufa.jpg
+preview: images/products/pasteles-bracito-nata-trufa-thumb.jpg
+allergens: 1,3,7
+type: productos
 ---

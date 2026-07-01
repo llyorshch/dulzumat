@@ -1,43 +1,261 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: static/images
-public_folder: /images
+media_folder: static/images/uploads
+public_folder: images/uploads
+publish_mode: editorial_workflow
+# Enable the local backend when you run the Netlify CMS app
+# in a localhost environment with `npx netlify-cms-proxy-server`
+# local_backend: true
 collections:
-  # - name: 'blog'
-  #   label: 'Blog'
-  #   folder: 'content/blog'
-  #   create: true
-  #   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-  #   editor:
-  #     preview: true
-  #   fields:
-  #     - { label: 'Title', name: 'title', widget: 'string' }
-  #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-  #     - { label: 'Description', name: 'description', widget: 'string' }
-  #     - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'productos'
-    label: 'Productos'
-    folder: 'content/productos'
+  - label: "Páginas"
+    name: "pages"
+    preview: false
+    files:
+      - label: "Página principal"
+        name: "home"
+        file: "data/homepage.yml"
+        media_folder: '../static/images'
+        public_folder: 'images/'
+        fields:
+          - label: Banner
+            name: banner
+            widget: object
+            fields:
+              - { label: "Banner habilitado", name: enable, widget: boolean, required: false, default: true }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Descripción", name: content, widget: string }
+              - { label: "Imágen", name: image, widget: image }
+              - label : "Botón"
+                name: button
+                widget: object
+                fields:
+                  - { label: "Botón habilitado", name: enable, widget: boolean, required: false, default: true }
+                  - { label: "Etiqueta", name: label, widget: string }
+                  - { label: "Enlace", name: link, widget: string }
+          - label: Campañas
+            name: promo
+            widget: object
+            fields:
+              - { label: "Habilitar campaña", name: enable, widget: boolean, required: false, default: false }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Contenido", name: content, widget: markdown }
+              - { label: "Tipo de contenido multimedia", name: type, widget: select, options: ['image','video'], default: 'image' }
+              - { label: "Video thumbnail", name: videoThumb, widget: image }
+              - { label: "Video URL", name: videoURL, widget: string }
+              - { label: "Imágen", name: image, widget: image }
+              - { label: "Link de la imagen", name: link, widget: string }
+          - label: Video
+            name: video
+            widget: object
+            fields:
+              - { label: "Habilitar video", name: enable, widget: boolean, required: false, default: true }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Contenido", name: content, widget: string }
+              - { label: "Imagen de previsualización", name: videoThumb, widget: image }
+              - { label: "URL del video", name: videoURL, widget: string }
+          - label: Call to Action
+            name: cta
+            widget: object
+            fields:
+              - { label: "Habilitar Call-to-Action", name: enable, widget: boolean, required: false, default: true }
+              - { label: "Título", name: title, widget: string }
+              - { label: "Contenido", name: content, widget: string }
+              - { label: "Imagen", name: image, widget: image }
+              - { label: "Imagen superpuesta", name: overlayImage, widget: image }
+              - label: "Botón"
+                name: button
+                widget: object
+                fields:
+                  - { label: "Etiqueta", name: label, widget: string }
+                  - { label: "Enlace", name: link, widget: string }
+          - label: Productos
+            name: productos
+            widget: object
+            fields:
+              - { label: "Habilitar Productos", name: enable, widget: boolean, required: false, default: true }
+              - { label: "Título", name: title, widget: string }
+      - label: Encargos
+        name: encargos
+        file: data/orders.yml
+        media_folder: '../static/images/encargos'
+        public_folder: 'images/encargos'
+        fields:
+          - label: "Descripción"
+            name: description
+            widget: markdown
+          - label: "Imagen de encargos"
+            name: ordersImage
+            widget: image
+          - label: "Encargos personalizados"
+            name: customOrders
+            widget: object
+            fields:
+              - { label: "Título", name: title, widget: string }
+              - { label: "Descripción", name: description, widget: markdown }
+              - label: "Imágenes"
+                name: images
+                widget: list
+                field: { label: "Imagen", name: image, widget: image }
+      - label: "Contacto"
+        name: "contact"
+        file: "data/contact.yml"
+        fields:
+          - label: Pastelerías
+            name: pastelerias
+            widget: list
+            fields:
+              - { label: Descripción, name: description, widget: string }
+              - { label: Dirección, name: direccion, widget: markdown }
+              - { label: Horario, name: horario, widget: markdown }
+              - { label: "URL de mapa", name: mapRef, widget: string }
+  - name: 'pasteles'
+    label: 'Productos - Pasteles'
+    folder: 'content/productos/pasteles'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'ShortDescription', name: 'shortDescription', widget: 'markdown' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
       - {
-          label: 'Image',
-          name: 'image',
-          widget: 'image',
-          default: 'static/images/products/product-1.png',
-          media_library: {
-            config: {
-              multiple: false
-            }
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
           }
-      }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
+  - name: 'reposteria'
+    label: 'Productos - Repostería'
+    folder: 'content/productos/reposteria'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - {
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
+          }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
+  - name: 'bolleria'
+    label: 'Productos - Bollería'
+    folder: 'content/productos/bolleria'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - {
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
+          }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
+  - name: 'pan'
+    label: 'Productos - Pan'
+    folder: 'content/productos/pan'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - {
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
+          }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
+  - name: 'tartas'
+    label: 'Productos - Tartas'
+    folder: 'content/productos/tartas'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - {
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
+          }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }
+  - name: 'salado'
+    label: 'Productos - Salado'
+    folder: 'content/productos/salado'
+    media_folder: '../../../static/images/products'
+    public_folder: 'images/products'
+    filter: { field: 'type', value: 'productos' }
+    sortable_fields: ['weight', 'title', 'date']
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'string' }
+      - { label: 'Clarification', name: 'clarification', widget: 'string', required: false }
+      - { label: 'Weight', name: 'weight', widget: 'number', default: 500 }
+      - {
+          label: 'Images',
+          name: 'images',
+          widget: 'list',
+          field: { label: 'Image', name: 'image', widget: 'image' }
+          }
+      - { label: 'Preview Image', name: 'preview', widget: 'image' }
+      - { label: 'Allergens', name: 'allergens', widget: 'string' }

@@ -2,11 +2,11 @@
 title: "Mousse de chocolate con frambuesa"
 date: 2020-10-04T18:06:55+02:00
 draft: false
-price: 18 €/kg
+price: 25 €/kg
 allergens: 1,3,7
-preview: /images/products/tartas-mousse-de-chocolate-con-frambuesa-thumb.jpg
+preview: images/products/tartas-mousse-de-chocolate-con-frambuesa-thumb.jpg
 images:
-  - image: /images/products/tartas-mousse-de-chocolate-con-frambuesa.jpg
+  - images/products/tartas-mousse-de-chocolate-con-frambuesa.jpg
 type: productos
 weight: 1400
 ---

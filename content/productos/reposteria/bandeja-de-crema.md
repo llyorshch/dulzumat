@@ -1,12 +1,12 @@
 ---
-title: "Banda de crema"
-date: 2020-10-04T12:44:30+02:00
 draft: false
-price: 11 €/ud.
-allergens: 1,3,7
-preview: /images/products/reposteria-bandeja-de-crema-thumb.jpg
-images:
-  - image: /images/products/reposteria-bandeja-de-crema.jpg
-type: productos
+title: Banda de crema
+date: 2020-10-04T12:44:30+02:00
+price: 15 €/ud.
 weight: 1400
+images:
+  - images/products/reposteria-bandeja-de-crema.jpg
+preview: images/products/reposteria-bandeja-de-crema-thumb.jpg
+allergens: 1,3,7
+type: productos
 ---

@@ -1,12 +1,12 @@
 ---
-title: "Banda de fruta"
-date: 2020-10-04T12:44:26+02:00
 draft: false
-price: 11 €/ud.
-allergens: 1,3,7
-preview: /images/products/reposteria-bandeja-de-fruta-thumb.jpg
-images:
-  - image: /images/products/reposteria-bandeja-de-fruta.jpg
-type: productos
+title: Banda de fruta
+date: 2020-10-04T12:44:26+02:00
+price: 15 €/ud.
 weight: 1300
+images:
+  - images/products/reposteria-bandeja-de-fruta.jpg
+preview: images/products/reposteria-bandeja-de-fruta-thumb.jpg
+allergens: 1,3,7
+type: productos
 ---

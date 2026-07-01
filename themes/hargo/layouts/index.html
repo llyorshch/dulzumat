@@ -3,7 +3,7 @@
 <!-- banner -->
 {{ if .Site.Data.homepage.banner.enable }}
 {{ with .Site.Data.homepage.banner }}
-<section class="section-sm banner-dulzumat" style="padding-top: 120px; padding-bottom: 120px">
+<section class="section-sm banner-dulzumat" style="padding-top: 120px; padding-bottom: 120px; background-image: url('{{ .image | absURL }}')">
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-5 col-md-6 order-2 order-md-1">
@@ -63,36 +63,6 @@
 {{ end }}
 <!-- /about -->
 
-<!-- material -->
-{{ if .Site.Data.homepage.material.enable }}
-{{ with .Site.Data.homepage.material }}
-<section class="section pb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 mx-auto text-center">
-        <h2>{{ .title | markdownify }}</h2>
-        <p>{{ .subtitle | markdownify }}</p>
-      </div>
-    </div>
-    <div class="row">
-      {{ range .materialItem }}
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card border-0 text-center">
-          <img src="{{ .image | absURL }}" alt="material" class="card-img-top border-0">
-          <div class="card-body">
-            <h4>{{ .title | markdownify }}</h4>
-            <p>{{ .content | markdownify }}</p>
-          </div>
-        </div>
-      </div>
-      {{ end }}
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /material -->
-
 <!-- advantage -->
 {{ if .Site.Data.homepage.promo.enable }}
 {{ with .Site.Data.homepage.promo }}
@@ -103,15 +73,16 @@
         <h2>{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
       </div>
-      {{ .Params }}
-      {{ if isset . "image" }}
+      {{ if ne .type "video" }}
       <div class="col-md-6">
         {{ if isset . "link"}}
+        <div class="card border-0 text-center">
           <a href="{{ .link | absURL }}">
-        {{ end }}
-          <img src="{{ .image | absURL}}" class="img-fluid" alt="">
-        {{ if isset . "link"}}
+          {{ end }}
+            <img src="{{ .image | absURL}}" class="card-img-top" alt="">
+          {{ if isset . "link"}}
           </a>
+        </div>
         {{ end }}
       </div>
       {{ else }}
@@ -210,7 +181,7 @@
           {{ if and (isset .Params "images") (isset .Params.images 0)  }}
           <a href="{{ .Permalink }}">
             {{ range first 1 .Params.images }}
-            <img src="{{ .image | absURL }}" alt="{{ .Title }}" class="card-img-top">
+            <img src="{{ . | absURL }}" alt="{{ . }}" class="card-img-top">
             {{ end }}
           </a>
           {{ end }}

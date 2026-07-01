@@ -1,12 +1,12 @@
 ---
-title: "Nata / Piña"
-date: 2020-10-04T11:45:54+02:00
 draft: false
-price: 1,75 €
-allergens: 1,3,7
-preview: /images/products/pasteles-nata-pinya-thumb.jpg
-images:
-  - image: /images/products/pasteles-nata-pinya.jpg
-type: productos
+title: Nata/Piña
+date: 2020-10-04T11:45:54+02:00
+price: 2,40 €
 weight: 700
+images:
+  - images/products/pasteles-nata-pinya.jpg
+preview: images/products/pasteles-nata-pinya-thumb.jpg
+allergens: 1,3,7
+type: productos
 ---
